@@ -136,6 +136,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TYPE APPROVALS — 若隐若现 */}
+      <section className="py-12 bg-[#f0f2f5]">
+        <div className="container-x text-center">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-steel/40 mb-3">Certifications & Approvals</p>
+          <p className="text-sm text-steel/50 max-w-2xl mx-auto leading-relaxed">
+            Our hydraulic hoses and assemblies are available with major marine &amp; industrial type approvals including <span className="text-steel/70 font-medium">ABS, DNV, BV, LR (Lloyd&apos;s Register), RINA, CCS</span> and others. Contact us for specific approval requirements.
+          </p>
+        </div>
+      </section>
+
       {/* INDUSTRIES */}
       <section className="py-20">
         <div className="container-x">

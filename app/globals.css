@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* ============================================
+   TERRA HOSE — Design System (Tailwind v4)
+   ============================================ */
+
+@theme {
+  /* Brand colors */
+  --color-primary: #1a1a2e;        /* 深钢蓝 — 工业主色 */
+  --color-primary-light: #24243d;
+  --color-primary-dark: #0f0f1e;
+  --color-accent: #e8621a;         /* 工程橙 — CTA / 强调 */
+  --color-accent-dark: #c74f0e;
+  --color-gold: #f39c12;           /* 辅助金黄 */
+  --color-steel: #2c3e50;          /* 深灰蓝 — 次级 */
+  --color-steel-light: #3d5066;
+
+  /* Typography */
+  --font-display: var(--font-barlow), "Barlow Condensed", sans-serif;
+  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a2e;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 工业感标题默认 */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 自定义滚动条（工业风） */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eef0f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #c2c8d0;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e8621a;
+}
+
+/* 通用 section 容器 */
+.container-x {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+/* 斜切工业标签 */
+.tag-chip {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--color-accent);
+  background: rgba(232, 98, 26, 0.1);
+  border-left: 3px solid var(--color-accent);
+}

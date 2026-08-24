@@ -21,6 +21,8 @@ export function Hero() {
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
 
       <div className="container-x relative py-20 md:py-28">
+        {/* Logo */}
+        <img src="/logo.jpg" alt="Terra Hose" className="h-16 md:h-20 w-auto object-contain mb-6" />
         <div className="max-w-3xl">
           <span className="tag-chip mb-5">{site.tagline}</span>
 

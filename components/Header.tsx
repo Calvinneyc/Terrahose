@@ -39,17 +39,7 @@ export function Header() {
       <div className="container-x flex items-center justify-between py-3">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <div className="flex h-10 w-10 items-center justify-center rounded bg-accent font-display text-xl font-bold">
-            T
-          </div>
-          <div className="leading-tight">
-            <div className="font-display text-lg font-bold tracking-wide">
-              TERRA HOSE
-            </div>
-            <div className="text-[10px] uppercase tracking-[0.2em] text-white/60">
-              Hydraulic Engineering
-            </div>
-          </div>
+          <img src="/logo.jpg" alt="Terra Hose & Hydraulic Engineering" className="h-10 w-auto object-contain" />
         </Link>
 
         {/* 桌面导航 */}

@@ -20,10 +20,10 @@ export function Hero() {
       {/* 橙色光晕 */}
       <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-accent/20 blur-3xl" />
 
-      <div className="container-x relative py-20 md:py-28">
-        {/* Logo */}
-        <img src="/logo.jpg" alt="Terra Hose" className="h-16 md:h-20 w-auto object-contain mb-6" />
-        <div className="max-w-3xl">
+      <div className="container-x relative py-16 md:py-24">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+          {/* Left: Text */}
+          <div className="max-w-2xl flex-1">
           <span className="tag-chip mb-5">{site.tagline}</span>
 
           <h1 className="font-display text-4xl md:text-6xl font-bold leading-[1.05] tracking-wide">
@@ -55,6 +55,15 @@ export function Hero() {
               <Icon name="whatsapp" className="w-5 h-5" />
               WhatsApp Us
             </a>
+          </div>
+
+          {/* Right: Logo */}
+          <div className="hidden lg:flex flex-shrink-0 items-center justify-center">
+            <div className="relative">
+              {/* Glow */}
+              <div className="absolute -inset-8 bg-accent/10 rounded-full blur-2xl" />
+              <img src="/logo.jpg" alt="Terra Hose & Hydraulic Engineering" className="relative w-[280px] h-auto object-contain drop-shadow-2xl" />
+            </div>
           </div>
         </div>
       </div>

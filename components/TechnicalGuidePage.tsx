@@ -86,8 +86,8 @@ export function TechnicalGuidePage({
       {/* HERO */}
       <section className="bg-primary py-14 text-white relative">
         {/* Background Logo Watermark */}
-        <div className="absolute left-2 top-0 bottom-0 w-[400px] flex items-center justify-center opacity-[0.15] pointer-events-none select-none hidden lg:flex">
-          <img src="/logo.jpg" alt="" className="w-full h-auto object-contain" />
+        <div className="absolute left-6 top-1/2 -translate-y-1/2 w-[280px] pointer-events-none select-none hidden lg:block">
+          <img src="/logo.jpg" alt="" className="w-full h-auto object-contain opacity-100" />
         </div>
         <div className="container-x relative z-10">
           <div className="max-w-3xl">

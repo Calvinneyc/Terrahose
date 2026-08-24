@@ -11,7 +11,7 @@ export const site = {
   phone: "+60167728500",
   phoneDisplay: "+60 16-772 8500",
   whatsapp: "60167728500",
-  email: "terra.engrg@gmail.com",
+  email: "sales@terrahose.com",
   address: "190-5, Jalan Saleng 10, Kulai, Johor 81400, Malaysia",
   addressShort: "Kulai, Johor, Malaysia",
   region: "Johor Bahru",

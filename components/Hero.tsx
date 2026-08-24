@@ -22,49 +22,55 @@ export function Hero() {
 
       <div className="container-x relative py-16 md:py-24">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-          {/* Left: Text */}
+
+          {/* Left: Text Content */}
           <div className="max-w-2xl flex-1">
-          <span className="tag-chip mb-5">{site.tagline}</span>
+            <span className="tag-chip mb-5">{site.tagline}</span>
 
-          <h1 className="font-display text-4xl md:text-6xl font-bold leading-[1.05] tracking-wide">
-            Hydraulic Hose Assembly
-            <br />
-            <span className="text-accent">& Hydraulic Fittings</span>
-          </h1>
+            <h1 className="font-display text-4xl md:text-6xl font-bold leading-[1.05] tracking-wide">
+              Hydraulic Hose Assembly
+              <br />
+              <span className="text-accent">& Hydraulic Fittings</span>
+            </h1>
 
-          <p className="mt-5 max-w-xl text-lg text-white/70 leading-relaxed">
-            Professional hydraulic hose assembly for mobile and industrial
-            applications. Custom length, custom fittings, precision crimping —
-            engineered in Johor, Malaysia.
-          </p>
+            <p className="mt-5 max-w-xl text-lg text-white/70 leading-relaxed">
+              Professional hydraulic hose assembly for mobile and industrial
+              applications. Custom length, custom fittings, precision crimping —
+              engineered in Johor, Malaysia.
+            </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/request-quote"
-              className="flex items-center justify-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold hover:bg-accent-dark transition-colors"
-            >
-              <Icon name="quote" className="w-5 h-5" />
-              Request a Quote
-            </Link>
-            <a
-              href={waDefault}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded border border-white/30 px-7 py-3.5 font-semibold hover:bg-white/10 transition-colors"
-            >
-              <Icon name="whatsapp" className="w-5 h-5" />
-              WhatsApp Us
-            </a>
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/request-quote"
+                className="flex items-center justify-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold hover:bg-accent-dark transition-colors"
+              >
+                <Icon name="quote" className="w-5 h-5" />
+                Request a Quote
+              </Link>
+              <a
+                href={waDefault}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 rounded border border-white/30 px-7 py-3.5 font-semibold hover:bg-white/10 transition-colors"
+              >
+                <Icon name="whatsapp" className="w-5 h-5" />
+                WhatsApp Us
+              </a>
+            </div>
           </div>
 
           {/* Right: Logo */}
           <div className="hidden lg:flex flex-shrink-0 items-center justify-center">
             <div className="relative">
-              {/* Glow */}
               <div className="absolute -inset-8 bg-accent/10 rounded-full blur-2xl" />
-              <img src="/logo.jpg" alt="Terra Hose & Hydraulic Engineering" className="relative w-[280px] h-auto object-contain drop-shadow-2xl" />
+              <img
+                src="/logo.jpg"
+                alt="Terra Hose & Hydraulic Engineering"
+                className="relative w-[300px] h-auto object-contain drop-shadow-2xl"
+              />
             </div>
           </div>
+
         </div>
       </div>
 

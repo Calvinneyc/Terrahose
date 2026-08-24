@@ -84,9 +84,11 @@ export function TechnicalGuidePage({
       </div>
 
       {/* HERO */}
-      <section className="bg-primary py-14 text-white relative overflow-hidden">
+      <section className="bg-primary py-14 text-white relative">
         {/* Background Logo Watermark */}
-        <img src="/logo.jpg" alt="" className="absolute left-4 top-1/2 -translate-y-1/2 w-[420px] h-auto opacity-[0.12] pointer-events-none select-none hidden lg:block" />
+        <div className="absolute left-2 top-0 bottom-0 w-[400px] flex items-center justify-center opacity-[0.15] pointer-events-none select-none hidden lg:flex">
+          <img src="/logo.jpg" alt="" className="w-full h-auto object-contain" />
+        </div>
         <div className="container-x relative z-10">
           <div className="max-w-3xl">
             {tag && <span className="tag-chip mb-4">{tag}</span>}

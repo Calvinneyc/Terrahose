@@ -33,15 +33,7 @@ export function Footer() {
         {/* 品牌 */}
         <div className="lg:col-span-2">
           <div className="flex items-center gap-3 mb-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded bg-accent font-display text-xl font-bold">
-              T
-            </div>
-            <div className="leading-tight">
-              <div className="font-display text-lg font-bold">TERRA HOSE</div>
-              <div className="text-[10px] uppercase tracking-[0.2em] text-white/50">
-                Hydraulic Engineering
-              </div>
-            </div>
+            <img src="/logo.jpg" alt="Terra Hose" className="h-12 w-auto object-contain" />
           </div>
           <p className="text-sm text-white/60 leading-relaxed max-w-sm">
             {site.description}

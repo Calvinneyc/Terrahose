@@ -34,10 +34,87 @@ const technicalTopics = [
   { title: "Crimping Guide", href: "/technical/crimping-guide", desc: "Crimp diameter, tolerance, COL, skiving & QC." },
 ];
 
+// SEO: descriptive product image alt text (image search + accessibility)
+const productAlts = [
+  "Hydraulic Hose Assembly — SAE 100 R1/R2 crimped hose, Malaysia",
+  "Hydraulic Hose Fittings — JIC / ORFS / BSP adapters",
+  "Ferrules for Hydraulic Hose Crimping",
+  "Hydraulic Hose Adapters — Steel fittings Johor",
+  "O-Rings and Seals for Hydraulic Systems",
+  "Custom Hydraulic Hose Assembly — Crimping service",
+  "High Pressure Hydraulic Hose — EN 856 4SP / 4SH",
+  "Hydraulic Hose Replacement & Repair parts",
+  "Hydraulic Hose Accessories & Connectors",
+];
+
 export default function Home() {
   return (
     <>
       <Hero />
+
+      {/* PHOTO QUOTE — 拍照报价（核心差异化卖点） */}
+      <section className="py-20">
+        <div className="container-x">
+          <div className="rounded-2xl border border-gray-100 bg-[#f0f2f5] p-8 md:p-12">
+            <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+              {/* Left */}
+              <div>
+                <span className="tag-chip mb-4">Photo Quote</span>
+                <h2 className="font-display text-3xl md:text-4xl font-bold text-primary leading-tight">
+                  Don&apos;t know the spec?
+                  <br />
+                  <span className="text-accent">Just send us a photo.</span>
+                </h2>
+                <p className="mt-4 max-w-lg text-steel/80 leading-relaxed">
+                  Got a worn or burst hose and no idea what to order? Snap a photo
+                  on WhatsApp — we&apos;ll identify the fitting, hose type and size,
+                  then give you a price. No part number needed.
+                </p>
+                <div className="mt-7 flex flex-col sm:flex-row gap-4">
+                  <a
+                    href={waDefault}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold text-white hover:bg-accent-dark transition-colors"
+                  >
+                    <Icon name="whatsapp" className="w-5 h-5" />
+                    Send Photo on WhatsApp
+                  </a>
+                  <Link
+                    href="/request-quote"
+                    className="flex items-center justify-center gap-2 rounded border border-steel/20 px-7 py-3.5 font-semibold text-primary hover:bg-white transition-colors"
+                  >
+                    <Icon name="quote" className="w-5 h-5" />
+                    Request a Quote
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right: 3 steps */}
+              <div className="grid gap-4">
+                {[
+                  { n: "01", t: "Snap a photo", d: "Take a clear photo of your hose or fitting." },
+                  { n: "02", t: "Send it to us", d: "WhatsApp it to us — that&apos;s it." },
+                  { n: "03", t: "Get your quote", d: "We identify the spec and price it fast." },
+                ].map((s) => (
+                  <div
+                    key={s.n}
+                    className="flex items-start gap-4 rounded-xl bg-white p-5 shadow-card"
+                  >
+                    <span className="font-display text-2xl font-bold text-accent leading-none">
+                      {s.n}
+                    </span>
+                    <div>
+                      <h3 className="font-display text-lg font-semibold text-primary">{s.t}</h3>
+                      <p className="mt-1 text-sm text-steel/70">{s.d}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CORE SERVICES */}
       <section className="py-20">
@@ -217,7 +294,7 @@ export default function Home() {
                 <div className="relative aspect-[3/4]">
                   <Image
                     src={`/images/product-${i + 1}.jpg`}
-                    alt={`Hydraulic product ${i + 1}`}
+                    alt={productAlts[i]}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"

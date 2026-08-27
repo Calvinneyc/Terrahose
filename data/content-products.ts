@@ -169,7 +169,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["BSPP (ISO 1179)", "BSPT (ISO 7)", "JIS B2351", "ORFS (ISO 8434-3)", "SAE Code 61 / Code 62 (ISO 6162)", "NPT (ANSI/ASME B1.20.1)"],
       sizes: ["1/4\"", "3/8\"", "1/2\"", "3/4\"", "1\"", "1-1/4\"", "1-1/2\"", "2\""],
-      materials: ["Carbon Steel (Zinc Plated)", "Stainless Steel SS304", "Stainless Steel SS316", "Brass"],
+      materials: ["Carbon Steel (Zinc Plated)", "#45 Steel", "Stainless Steel SS304", "Stainless Steel SS316", "Brass"],
       applications: ["Excavator hydraulic circuits", "Agricultural equipment hydraulics", "Industrial press machines", "Truck hydraulic systems", "Injection moulding machines"],
       notes: [
         "JIS fittings look similar to BSP but are NOT interchangeable — different thread pitch. Sending a photo via WhatsApp helps us identify correctly.",
@@ -199,7 +199,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["BSPP (ISO 1179)", "BSPT (ISO 7)", "JIS B2351", "ORFS (ISO 8434-3)", "SAE Code 61 / Code 62 (ISO 6162)", "NPT (ANSI/ASME B1.20.1)"],
       sizes: ["1/4\"", "3/8\"", "1/2\"", "3/4\"", "1\"", "1-1/4\"", "1-1/2\"", "2\""],
-      materials: ["碳钢（镀锌）", "不锈钢 SS304", "不锈钢 SS316", "黄铜"],
+      materials: ["碳钢（镀锌）", "#45 钢", "不锈钢 SS304", "不锈钢 SS316", "黄铜"],
       applications: ["挖掘机液压回路", "农业设备液压", "工业压机", "卡车液压系统", "注塑机"],
       notes: [
         "JIS 接头外观类似 BSP，但不能互换——螺纹牙距不同。发张照片到 WhatsApp 可帮我们准确识别。",
@@ -229,7 +229,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["BSPP (ISO 1179)", "BSPT (ISO 7)", "JIS B2351", "ORFS (ISO 8434-3)", "SAE Code 61 / Code 62 (ISO 6162)", "NPT (ANSI/ASME B1.20.1)"],
       sizes: ["1/4\"", "3/8\"", "1/2\"", "3/4\"", "1\"", "1-1/4\"", "1-1/2\"", "2\""],
-      materials: ["Keluli Karbon (Bersadur Zink)", "Keluli Tahan Karat SS304", "Keluli Tahan Karat SS316", "Loyang"],
+      materials: ["Keluli Karbon (Bersadur Zink)", "Keluli #45", "Keluli Tahan Karat SS304", "Keluli Tahan Karat SS316", "Loyang"],
       applications: ["Litar hidraulik jengkaut", "Hidraulik peralatan pertanian", "Mesin penekan industri", "Sistem hidraulik lori", "Mesin suntikan acuan"],
       notes: [
         "Kelengkapan JIS kelihatan serupa dengan BSP tetapi TIDAK boleh ditukar ganti — pic benang berbeza. Hantar foto melalui WhatsApp untuk membantu kami kenal pasti dengan betul.",
@@ -259,7 +259,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["DIN 20039", "ISO 12151-1"],
       sizes: ["6mm", "10mm", "13mm", "16mm", "19mm", "25mm", "32mm", "38mm", "50mm"],
-      materials: ["Carbon Steel (Zinc Plated)", "Stainless Steel SS304"],
+      materials: ["Carbon Steel (Zinc Plated)", "#45 Steel", "Stainless Steel SS304"],
       applications: ["Hydraulic hose assembly (always needed)", "Repair of damaged ferrules", "Custom hose fabrication"],
       notes: [
         "Ferrules must match the hose type — a R1AT ferrule is not the same as a 4SP ferrule even if the OD looks similar.",
@@ -285,7 +285,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["DIN 20039", "ISO 12151-1"],
       sizes: ["6mm", "10mm", "13mm", "16mm", "19mm", "25mm", "32mm", "38mm", "50mm"],
-      materials: ["碳钢（镀锌）", "不锈钢 SS304"],
+      materials: ["碳钢（镀锌）", "#45 钢", "不锈钢 SS304"],
       applications: ["液压软管总成（必备）", "损坏套筒的维修", "定制软管制作"],
       notes: [
         "套筒必须匹配软管类型——即使外径相似，R1AT 套筒与 4SP 套筒也不相同。",
@@ -311,7 +311,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["DIN 20039", "ISO 12151-1"],
       sizes: ["6mm", "10mm", "13mm", "16mm", "19mm", "25mm", "32mm", "38mm", "50mm"],
-      materials: ["Keluli Karbon (Bersadur Zink)", "Keluli Tahan Karat SS304"],
+      materials: ["Keluli Karbon (Bersadur Zink)", "Keluli #45", "Keluli Tahan Karat SS304"],
       applications: ["Pemasangan hos hidraulik (sentiasa diperlukan)", "Pembaikan ferul yang rosak", "Pembuatan hos tersuai"],
       notes: [
         "Ferul mesti padan dengan jenis hos — ferul R1AT tidak sama dengan ferul 4SP walaupun OD kelihatan serupa.",
@@ -341,7 +341,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["BSPP / BSPT (ISO 1179 / ISO 7)", "JIS B2351", "NPT / NPTF (ANSI B1.20.1)", "ORFS (ISO 8434-3)"],
       sizes: ["1/4\"", "3/8\"", "1/2\"", "3/4\"", "1\"", "1-1/4\"", "1-1/2\"", "2\""],
-      materials: ["Carbon Steel (Zinc Plated)", "Stainless Steel SS304"],
+      materials: ["Carbon Steel (Zinc Plated)", "#45 Steel", "Stainless Steel SS304"],
       applications: ["Connecting mixed-brand hydraulic components", "Adapting fittings to non-standard ports", "Workshop hose assembly repairs", "OEM to aftermarket fitting conversion"],
       notes: [
         "The most common adapter we sell is BSP to JIS — many customers accidentally buy JIS fittings when their equipment actually uses BSP.",
@@ -368,7 +368,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["BSPP / BSPT (ISO 1179 / ISO 7)", "JIS B2351", "NPT / NPTF (ANSI B1.20.1)", "ORFS (ISO 8434-3)"],
       sizes: ["1/4\"", "3/8\"", "1/2\"", "3/4\"", "1\"", "1-1/4\"", "1-1/2\"", "2\""],
-      materials: ["碳钢（镀锌）", "不锈钢 SS304"],
+      materials: ["碳钢（镀锌）", "#45 钢", "不锈钢 SS304"],
       applications: ["连接不同品牌的液压组件", "将接头适配到非标准端口", "车间软管总成维修", "原厂到售后接头转换"],
       notes: [
         "我们最常销售的转接头是 BSP 转 JIS——许多客户设备实际用的是 BSP，却误买了 JIS 接头。",
@@ -395,7 +395,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       ],
       standards: ["BSPP / BSPT (ISO 1179 / ISO 7)", "JIS B2351", "NPT / NPTF (ANSI B1.20.1)", "ORFS (ISO 8434-3)"],
       sizes: ["1/4\"", "3/8\"", "1/2\"", "3/4\"", "1\"", "1-1/4\"", "1-1/2\"", "2\""],
-      materials: ["Keluli Karbon (Bersadur Zink)", "Keluli Tahan Karat SS304"],
+      materials: ["Keluli Karbon (Bersadur Zink)", "Keluli #45", "Keluli Tahan Karat SS304"],
       applications: ["Menyambung komponen hidraulik jenama berbeza", "Menyesuaikan kelengkapan ke port bukan standard", "Pembaikan pemasangan hos bengkel", "Penukaran kelengkapan OEM ke pasaran ganti"],
       notes: [
         "Penyesuai paling biasa kami jual ialah BSP ke JIS — ramai pelanggan tersilap beli kelengkapan JIS sedangkan peralatan mereka sebenarnya menggunakan BSP.",

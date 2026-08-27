@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "home": "Utama",
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "services": "Perkhidmatan",
+    "industries": "Industri",
+    "contact": "Hubungi Kami",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "tagline": "Pemasangan Hos Hidraulik & Kelengkapan Hidraulik",
+    "title1": "Pemasangan Hos Hidraulik",
+    "title2": "& Kelengkapan Hidraulik",
+    "desc": "Pemasangan hos hidraulik profesional untuk aplikasi mudah alih dan industri. Panjang tersuai, kelengkapan tersuai, pengelim ketepatan — direka di Johor, Malaysia.",
+    "cta1": "Minta Sebut Harga",
+    "cta2": "WhatsApp Kami",
+    "capabilities": ["Hos Hidraulik", "Kelengkapan", "Pemasangan Hos", "Perkhidmatan Kejuruteraan"]
+  },
+  "photoQuote": {
+    "tag": "Sebut Harga Foto",
+    "title1": "Tak tahu spesifikasi?",
+    "title2": "Hantar sahaja foto.",
+    "desc": "Hos haus atau pecah dan tak tahu nak tempah apa? Ambil gambar dan hantar di WhatsApp — kami kenal pasti kelengkapan, jenis hos dan saiz, kemudian beri harga. Tak perlu nombor alat ganti.",
+    "cta1": "Hantar Foto di WhatsApp",
+    "cta2": "Minta Sebut Harga",
+    "steps": [
+      { "t": "Ambil gambar", "d": "Ambil gambar hos atau kelengkapan anda dengan jelas." },
+      { "t": "Hantar kepada kami", "d": "Hantar di WhatsApp — semudah itu." },
+      { "t": "Dapat sebut harga", "d": "Kami kenal pasti spesifikasi dan beri harga dengan pantas." }
+    ]
+  },
+  "services": {
+    "tag": "Perkhidmatan Kami",
+    "title": "Apa Yang Kami Boleh Buat Untuk Anda",
+    "desc": "Daripada pemasangan hos hingga penggantian kecemasan — kami pastikan mesin anda terus berjalan.",
+    "items": {
+      "hydraulic-hose-assembly": {
+        "title": "Pemasangan Hos Hidraulik",
+        "short": "Pemasangan Hos",
+        "desc": "Berikan sampel atau spesifikasi → Terra kenal pasti → pasang → uji tekanan → hantar. Perkhidmatan pemasangan hos lengkap."
+      },
+      "hose-crimping": {
+        "title": "Pengelim Hos",
+        "short": "Pengelim",
+        "desc": "Pengelim ketepatan untuk hos hidraulik sehingga saiz tugas berat, menggunakan mesin pengelim yang ditentukur untuk sambungan yang boleh dipercayai dan bebas bocor."
+      },
+      "hose-replacement": {
+        "title": "Penggantian Hos",
+        "short": "Penggantian",
+        "desc": "Penggantian pantas hos hidraulik yang rosak atau gagal. Bawa hos lama atau hantar foto, kami kenal pasti dan padankan."
+      },
+      "hydraulic-hose-repair": {
+        "title": "Pembaikan Hos Hidraulik",
+        "short": "Pembaikan",
+        "desc": "Pembaikan di tempat dan penamatan semula pemasangan hos hidraulik untuk mengurangkan masa henti mesin."
+      },
+      "custom-hose-assembly": {
+        "title": "Pemasangan Hos Tersuai",
+        "short": "Tersuai",
+        "desc": "Panjang tersuai, kelengkapan tersuai dan orientasi tersuai. Dibina mengikut spesifikasi dan aplikasi tepat anda."
+      },
+      "onsite-emergency": {
+        "title": "Perkhidmatan Di Tapak / Kecemasan",
+        "short": "Di Tapak",
+        "desc": "Penggantian hos mudah alih dan sokongan kecemasan untuk jengkaut, jentera dan peralatan kilang."
+      }
+    }
+  },
+  "products": {
+    "tag": "Produk",
+    "title": "Rangkaian Hos & Kelengkapan Hidraulik",
+    "desc": "Kategori produk yang kami stok dan pasang. Perlukan spesifikasi tertentu? Hantar foto atau sampel kepada kami.",
+    "items": {
+      "hydraulic-hose": {
+        "name": "Hos Hidraulik",
+        "sub": "Hos tekanan tinggi",
+        "desc": "Hos hidraulik tekanan tinggi untuk aplikasi mudah alih dan industri."
+      },
+      "hydraulic-fittings": {
+        "name": "Kelengkapan Hidraulik",
+        "sub": "Semua standard benang",
+        "desc": "Pelbagai kelengkapan hidraulik dan sambungan dalam semua standard benang."
+      },
+      "ferrules": {
+        "name": "Ferul",
+        "sub": "Sarung pengelim",
+        "desc": "Ferul pengelim dan sarung untuk penamatan hos yang selamat."
+      },
+      "adapters": {
+        "name": "Penyesuai",
+        "sub": "Penukar benang",
+        "desc": "Penyesuai dan penyambung untuk menyambung jenis benang dan port yang berbeza."
+      },
+      "o-rings-seals": {
+        "name": "Cincin-O & Pengedap",
+        "sub": "Pengedap bebas bocor",
+        "desc": "Cincin-O hidraulik, pengedap dan kit pengedap untuk sistem bebas bocor."
+      },
+      "accessories": {
+        "name": "Aksesori",
+        "sub": "Pengapit & pelindung",
+        "desc": "Pengapit hos, sarung pelindung dan aksesori hidraulik."
+      }
+    }
+  },
+  "why": {
+    "tag": "Kenapa Terra",
+    "title": "Kenapa Pelanggan Memilih Terra",
+    "desc": "Bukan sekadar pembekal hos — rakan kejuruteraan hidraulik.",
+    "items": [
+      "Pemasangan Hos Profesional",
+      "Pelbagai Kelengkapan Hidraulik",
+      "Pengenalpastian Hos Teknikal",
+      "Pengelim Ketepatan",
+      "Pemeriksaan Kualiti & Ujian Tekanan",
+      "Pemulihan Pantas",
+      "Pemasangan Hos Tersuai",
+      "Sokongan Kejuruteraan"
+    ]
+  },
+  "approvals": {
+    "tag": "Pensijilan & Kelulusan",
+    "desc": "Hos hidraulik dan pemasangan kami tersedia dengan kelulusan jenis marin & industri utama termasuk ABS, DNV, BV, LR (Lloyd's Register), RINA, CCS dan lain-lain. Hubungi kami untuk keperluan kelulusan khusus."
+  },
+  "industries": {
+    "tag": "Industri",
+    "title": "Industri Yang Kami Layani",
+    "desc": "Penyelesaian hidraulik merentas aplikasi mudah alih dan industri.",
+    "items": {
+      "construction": "Pembinaan",
+      "agriculture": "Pertanian",
+      "manufacturing": "Pembuatan",
+      "heavy-machinery": "Jentera Berat",
+      "industrial": "Perindustrian"
+    }
+  },
+  "technical": {
+    "tag": "Panduan Teknikal",
+    "title": "Kami Mahir Hidraulik",
+    "desc": "Panduan teknikal percuma untuk membantu anda kenal pasti hos dan kelengkapan yang betul.",
+    "items": [
+      { "title": "Panduan Saiz Hos Hidraulik", "desc": "Saiz dash, ID/OD, R1AT/R2AT/4SP/4SH, tekanan & jejari lentur." },
+      { "title": "Pengenalpastian Benang BSP vs JIS", "desc": "Kenal pasti kelengkapan BSPP, BSPT, JIS metrik dan suar." },
+      { "title": "Panduan Kelengkapan ORFS", "desc": "Pengedap Muka Cincin-O: jenis lelaki, perempuan, cincin-O." },
+      { "title": "Bebibir SAE Code 61 vs 62", "desc": "3000 PSI vs 6000 PSI, saiz & konfigurasi bebibir." },
+      { "title": "Panduan Pengelim", "desc": "Diameter pengelim, toleransi, COL, skiving & QC." }
+    ]
+  },
+  "gallery": {
+    "tag": "Galeri Produk",
+    "title": "Stok Sebenar, Foto Sebenar",
+    "desc": "Produk sebenar yang kami stok dan pasang. Klik untuk lihat — atau WhatsApp kami saiz yang anda perlukan."
+  },
+  "finalCta": {
+    "title": "Perlukan Pemasangan Hos Tersuai?",
+    "desc": "Hantar sampel, spesifikasi atau foto kepada kami — kami akan kenal pasti, pasang dan hantarnya. Isnin–Sabtu: 8:30 pagi – 6:00 petang.",
+    "cta1": "WhatsApp Kami Sekarang",
+    "cta2": "Minta Sebut Harga"
+  },
+  "footer": {
+    "productsTitle": "Produk",
+    "servicesTitle": "Perkhidmatan",
+    "productsLinks": {
+      "hydraulic-hose": "Hos Hidraulik",
+      "hydraulic-fittings": "Kelengkapan Hidraulik",
+      "ferrules": "Ferul",
+      "adapters": "Penyesuai",
+      "o-rings-seals": "Cincin-O & Pengedap"
+    },
+    "servicesLinks": {
+      "hydraulic-hose-assembly": "Pemasangan Hos",
+      "hose-crimping": "Pengelim Hos",
+      "hose-replacement": "Penggantian Hos",
+      "hydraulic-hose-repair": "Pembaikan Hos",
+      "custom-hose-assembly": "Pemasangan Tersuai"
+    },
+    "rights": "Hak cipta terpelihara."
+  },
+  "langSwitcher": {
+    "label": "Bahasa"
+  },
+  "ui": {
+    "common": {
+      "home": "Utama",
+      "products": "Produk",
+      "services": "Perkhidmatan",
+      "industries": "Industri",
+      "technical": "Panduan Teknikal",
+      "whatsappUsNow": "WhatsApp Kami Sekarang",
+      "enquireWhatsApp": "Tanya melalui WhatsApp",
+      "getQuote": "Dapatkan Sebut Harga",
+      "call": "Hubungi",
+      "notes": "Nota",
+      "quickEnquiry": "Pertanyaan Pantas"
+    },
+    "product": {
+      "specifications": "Spesifikasi",
+      "typesAvailable": "Jenis Tersedia",
+      "standardsRatings": "Piawaian & Penarafan",
+      "commonApplications": "Aplikasi Biasa",
+      "viewStockPhotos": "Lihat Foto Stok Kami",
+      "stockPhotosDesc": "Lihat foto produk sebenar dalam galeri kami. Klik mana-mana imej untuk WhatsApp kami tentang produk itu.",
+      "goToGallery": "Pergi ke Galeri Produk →",
+      "quickEnquiryDesc": "Dapatkan semakan stok + harga dalam beberapa minit",
+      "commonSizes": "Saiz Biasa",
+      "materials": "Bahan",
+      "otherProducts": "Produk Lain",
+      "needSpecificSpec": "Perlukan spesifikasi khusus?",
+      "needSpecificSpecDesc": "Hantar saiz hos, jenis kelengkapan atau foto melalui WhatsApp."
+    },
+    "service": {
+      "howItWorks": "Cara Ia Berfungsi",
+      "whatsIncluded": "Apa Yang Termasuk",
+      "suitableFor": "Sesuai Untuk",
+      "getQuoteDesc": "WhatsApp kami — respons paling pantas",
+      "otherServices": "Perkhidmatan Lain",
+      "readyToStart": "Bersedia untuk mula?",
+      "readyToStartDesc": "WhatsApp kami keperluan anda — kami respons pantas."
+    },
+    "industry": {
+      "commonChallenges": "Cabaran Biasa",
+      "howTerraHelps": "Bagaimana Terra Hose Membantu",
+      "equipmentWeSupport": "Peralatan Yang Kami Sokong",
+      "needHoseFor": "Perlukan Hos untuk {title}?",
+      "needHoseForDesc": "WhatsApp kami model peralatan anda atau foto",
+      "otherIndustries": "Industri Lain",
+      "relatedServices": "Perkhidmatan Berkaitan",
+      "equipmentDown": "Peralatan rosak?",
+      "equipmentDownDesc": "Hantar foto melalui WhatsApp — kami boleh kenal pasti hos dan beri sebut harga pantas.",
+      "getHelpFast": "Dapatkan Bantuan Pantas",
+      "relatedServiceNames": {
+        "hoseAssembly": "Pemasangan Hos",
+        "hoseReplacement": "Penggantian Hos",
+        "hoseCrimping": "Pengelim Hos"
+      }
+    },
+    "technical": {
+      "askForHelp": "Minta Bantuan",
+      "allGuides": "← Semua Panduan Teknikal",
+      "technicalSpecs": "Spesifikasi Teknikal",
+      "relatedProducts": "Produk Berkaitan",
+      "shopProducts": "Beli produk yang disebut dalam panduan ini",
+      "needHelpIdentify": "Perlukan bantuan mengenal pasti bahagian?",
+      "needHelpIdentifyDesc": "Tak pasti spesifikasi yang anda perlukan? Hantar foto melalui WhatsApp — kami kenal pasti dan beri sebut harga serta-merta.",
+      "uploadPhotoQuote": "Muat Naik Foto / Sebut Harga",
+      "requestFormalQuote": "Minta Sebut Harga Rasmi",
+      "quickEnquiryDesc": "Dapatkan bantuan pengenalpastian + sebut harga dalam beberapa minit",
+      "ourServices": "Perkhidmatan Kami",
+      "serviceNames": {
+        "customHoseAssembly": "Pemasangan Hos Tersuai",
+        "hoseCrimping": "Perkhidmatan Pengelim Hos",
+        "hoseReplacement": "Penggantian Hos"
+      }
+    },
+    "about": {
+      "breadcrumb": "Tentang Kami",
+      "tag": "Tentang Kami",
+      "heroTitle": "Terra Hose & Hydraulic Engineering",
+      "heroDesc": "Pakar pemasangan hos hidraulik yang berpangkalan di Johor, Malaysia. Kami bantu pelanggan mengenal pasti, membekal dan memasang hos hidraulik serta kelengkapan yang betul — pantas.",
+      "capabilities": "Keupayaan Kami",
+      "team": "Pasukan Kami",
+      "getInTouch": "Hubungi Kami",
+      "whatsappUs": "WhatsApp Kami",
+      "whatWeDontDo": "Apa Yang Kami Tidak Buat",
+      "whatWeDontDoDesc": "Kami jujur tentang keupayaan kami. Kami tidak mendakwa sebagai pengedar sah untuk mana-mana jenama yang bukan kami. Jika kami tidak ada, kami akan beritahu — dan cuba tunjukkan arah yang betul.",
+      "ourProductsServices": "Produk & Perkhidmatan Kami",
+      "browseProducts": "Layari Produk →",
+      "viewServices": "Lihat Perkhidmatan →",
+      "industriesWeServe": "Industri Yang Kami Khidmat →",
+      "productGallery": "Galeri Produk →"
+    },
+    "contact": {
+      "breadcrumb": "Hubungi",
+      "tag": "Hubungi Kami",
+      "heroTitle": "Hubungi Kami",
+      "heroDesc": "WhatsApp ialah cara terpantas untuk menghubungi kami. Isi borang atau mesej kami terus.",
+      "quickContact": "Hubungan Pantas",
+      "workshopHours": "Waktu Bengkel",
+      "walkInsWelcome": "Kunjungan terus dialu-alukan pada waktu perniagaan.",
+      "sendEnquiry": "Hantar Pertanyaan",
+      "orMessageUsOn": "Atau mesej kami terus di",
+      "whatsapp": "WhatsApp",
+      "usuallyFaster": "— biasanya lebih pantas.",
+      "enquiryReceived": "Pertanyaan Diterima!",
+      "enquiryReceivedDesc": "Kami akan membalas dalam 1 hari perniagaan. Untuk perkhidmatan lebih pantas, WhatsApp kami terus.",
+      "chatOnWhatsapp": "Bual di WhatsApp",
+      "yourName": "Nama Anda *",
+      "company": "Syarikat",
+      "phone": "Telefon / WhatsApp *",
+      "email": "E-mel",
+      "whatDoYouNeed": "Apa yang anda perlukan? *",
+      "selectOption": "Pilih pilihan...",
+      "describeRequirement": "Terangkan keperluan anda *",
+      "optional": "(Pilihan)",
+      "submitEnquiry": "Hantar Pertanyaan",
+      "fasterWhatsapp": "Lebih pantas: WhatsApp Kami"
+    }
+  }
+}

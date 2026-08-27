@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icon } from "./Icon";
 import { waLink } from "@/lib/site";
+import { getDictionary } from "@/lib/i18n";
 
 interface ServiceProcess {
   step: number;
@@ -9,6 +10,7 @@ interface ServiceProcess {
 }
 
 interface ServicePageProps {
+  locale?: string;
   tag?: string;
   title: string;
   tagline?: string;
@@ -22,7 +24,8 @@ interface ServicePageProps {
 }
 
 export function ServicePage({
-  tag = "Our Services",
+  locale = "en",
+  tag,
   title,
   tagline,
   description,
@@ -33,6 +36,10 @@ export function ServicePage({
   whatsappSubject,
   siblings = [],
 }: ServicePageProps) {
+  const t = getDictionary(locale);
+  const c = t.ui.common;
+  const s = t.ui.service;
+
   const waHref = waLink(
     whatsappSubject ??
       `Hi Terra Hose, I'm interested in your ${title} service. Can you give me more details?`
@@ -44,9 +51,9 @@ export function ServicePage({
       <div className="bg-[#f0f2f5] border-b border-gray-200">
         <div className="container-x py-3">
           <nav className="flex items-center gap-2 text-xs text-steel/60">
-            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-accent transition-colors">{c.home}</Link>
             <span>/</span>
-            <Link href="/services" className="hover:text-accent transition-colors">Services</Link>
+            <Link href={`/${locale}/services`} className="hover:text-accent transition-colors">{c.services}</Link>
             <span>/</span>
             <span className="text-steel/40">{title}</span>
           </nav>
@@ -71,7 +78,7 @@ export function ServicePage({
                 className="flex items-center justify-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold hover:bg-accent-dark transition-colors"
               >
                 <Icon name="whatsapp" className="w-5 h-5" />
-                Enquire via WhatsApp
+                {c.enquireWhatsApp}
               </a>
             </div>
           </div>
@@ -83,7 +90,7 @@ export function ServicePage({
           <div className="lg:col-span-2 space-y-10">
             {process.length > 0 && (
               <div>
-                <h2 className="font-display text-2xl font-bold text-primary mb-6">How It Works</h2>
+                <h2 className="font-display text-2xl font-bold text-primary mb-6">{s.howItWorks}</h2>
                 <div className="space-y-5">
                   {process.map((p) => (
                     <div key={p.step} className="flex gap-5">
@@ -107,7 +114,7 @@ export function ServicePage({
 
             {features.length > 0 && (
               <div>
-                <h2 className="font-display text-2xl font-bold text-primary mb-5">What&apos;s Included</h2>
+                <h2 className="font-display text-2xl font-bold text-primary mb-5">{s.whatsIncluded}</h2>
                 <div className="grid gap-3 sm:grid-cols-2">
                   {features.map((f) => (
                     <div key={f} className="flex items-start gap-3 rounded-lg border border-gray-100 bg-white p-4">
@@ -121,7 +128,7 @@ export function ServicePage({
 
             {applications.length > 0 && (
               <div>
-                <h2 className="font-display text-2xl font-bold text-primary mb-5">Suitable For</h2>
+                <h2 className="font-display text-2xl font-bold text-primary mb-5">{s.suitableFor}</h2>
                 <ul className="space-y-2.5">
                   {applications.map((a) => (
                     <li key={a} className="flex items-start gap-3 text-sm text-steel/80">
@@ -135,7 +142,7 @@ export function ServicePage({
 
             {notes.length > 0 && (
               <div className="rounded-xl border border-amber-200 bg-amber-50 p-6">
-                <h3 className="font-display text-base font-semibold text-amber-800 mb-3">📋 Notes</h3>
+                <h3 className="font-display text-base font-semibold text-amber-800 mb-3">📋 {c.notes}</h3>
                 <ul className="space-y-2">
                   {notes.map((n) => (
                     <li key={n} className="text-sm text-amber-700">• {n}</li>
@@ -148,8 +155,8 @@ export function ServicePage({
           {/* SIDEBAR */}
           <div className="space-y-6">
             <div className="rounded-xl border border-accent/30 bg-white p-6 shadow-card">
-              <h3 className="font-display text-lg font-semibold text-primary mb-1">Get a Quote</h3>
-              <p className="text-xs text-steel/60 mb-4">WhatsApp us — fastest response</p>
+              <h3 className="font-display text-lg font-semibold text-primary mb-1">{c.getQuote}</h3>
+              <p className="text-xs text-steel/60 mb-4">{s.getQuoteDesc}</p>
               <a
                 href={waHref}
                 target="_blank"
@@ -157,25 +164,25 @@ export function ServicePage({
                 className="flex items-center justify-center gap-2 rounded bg-accent px-5 py-3 text-sm font-semibold hover:bg-accent-dark transition-colors"
               >
                 <Icon name="whatsapp" className="w-5 h-5" />
-                WhatsApp Us Now
+                {c.whatsappUsNow}
               </a>
               <a href="tel:+60167728500" className="mt-3 flex items-center justify-center gap-2 rounded border border-gray-200 px-5 py-2.5 text-sm font-medium hover:bg-gray-50 transition-colors">
                 <Icon name="phone" className="w-4 h-4" />
-                Call +60 16-772 8500
+                {c.call} +60 16-772 8500
               </a>
             </div>
 
             {siblings.length > 0 && (
               <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-card">
-                <h3 className="font-display text-base font-semibold text-primary mb-3">Other Services</h3>
+                <h3 className="font-display text-base font-semibold text-primary mb-3">{s.otherServices}</h3>
                 <ul className="space-y-2">
-                  {siblings.map((s) => (
-                    <li key={s.slug}>
+                  {siblings.map((sib) => (
+                    <li key={sib.slug}>
                       <Link
-                        href={`/services/${s.slug}`}
+                        href={`/${locale}/services/${sib.slug}`}
                         className="text-sm text-steel/70 hover:text-accent transition-colors"
                       >
-                        → {s.name}
+                        → {sib.name}
                       </Link>
                     </li>
                   ))}
@@ -190,8 +197,8 @@ export function ServicePage({
       <section className="bg-[#f0f2f5] py-12">
         <div className="container-x flex flex-col sm:flex-row items-center justify-between gap-5">
           <div>
-            <h3 className="font-display text-xl font-bold text-primary">Ready to get started?</h3>
-            <p className="mt-1 text-sm text-steel/70">WhatsApp us your requirements — we respond fast.</p>
+            <h3 className="font-display text-xl font-bold text-primary">{s.readyToStart}</h3>
+            <p className="mt-1 text-sm text-steel/70">{s.readyToStartDesc}</p>
           </div>
           <a
             href={waHref}
@@ -200,7 +207,7 @@ export function ServicePage({
             className="flex items-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold shrink-0 hover:bg-accent-dark transition-colors"
           >
             <Icon name="whatsapp" className="w-5 h-5" />
-            Get a Quote
+            {c.getQuote}
           </a>
         </div>
       </section>

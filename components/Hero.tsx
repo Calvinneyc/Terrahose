@@ -1,11 +1,21 @@
 import Link from "next/link";
 import { site, waDefault } from "@/lib/site";
+import { getDictionary } from "@/lib/i18n";
 import { Icon } from "./Icon";
+
+const capabilityIcons = ["wrench", "crimp", "custom", "repair"] as const;
 
 /**
  * Hero — 第一屏必须立刻告诉客户 Terra 是谁、做什么、能拿到什么
  */
-export function Hero() {
+export function Hero({ locale = "en" }: { locale?: string }) {
+  const t = getDictionary(locale);
+
+  const capabilities = t.hero.capabilities.map((label, i) => ({
+    icon: capabilityIcons[i] ?? "wrench",
+    label,
+  }));
+
   return (
     <section className="relative overflow-hidden bg-primary text-white">
       {/* 工业网格背景 */}
@@ -25,18 +35,16 @@ export function Hero() {
 
           {/* Left: Text Content */}
           <div className="max-w-2xl flex-1">
-            <span className="tag-chip mb-5">{site.tagline}</span>
+            <span className="tag-chip mb-5">{t.hero.tagline}</span>
 
             <h1 className="font-display text-4xl md:text-6xl font-bold leading-[1.05] tracking-wide">
-              Hydraulic Hose Assembly
+              {t.hero.title1}
               <br />
-              <span className="text-accent">& Hydraulic Fittings</span>
+              <span className="text-accent">{t.hero.title2}</span>
             </h1>
 
             <p className="mt-5 max-w-xl text-lg text-white/70 leading-relaxed">
-              Professional hydraulic hose assembly for mobile and industrial
-              applications. Custom length, custom fittings, precision crimping —
-              engineered in Johor, Malaysia.
+              {t.hero.desc}
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -45,7 +53,7 @@ export function Hero() {
                 className="flex items-center justify-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold hover:bg-accent-dark transition-colors"
               >
                 <Icon name="quote" className="w-5 h-5" />
-                Request a Quote
+                {t.hero.cta1}
               </Link>
               <a
                 href={waDefault}
@@ -54,7 +62,7 @@ export function Hero() {
                 className="flex items-center justify-center gap-2 rounded border border-white/30 px-7 py-3.5 font-semibold hover:bg-white/10 transition-colors"
               >
                 <Icon name="whatsapp" className="w-5 h-5" />
-                WhatsApp Us
+                {t.hero.cta2}
               </a>
             </div>
           </div>
@@ -77,14 +85,9 @@ export function Hero() {
       {/* 底部能力条 */}
       <div className="relative border-t border-white/10 bg-primary-dark/60">
         <div className="container-x grid grid-cols-2 md:grid-cols-4 divide-x divide-white/10">
-          {[
-            { icon: "wrench" as const, label: "Hydraulic Hose" },
-            { icon: "crimp" as const, label: "Fittings" },
-            { icon: "custom" as const, label: "Hose Assembly" },
-            { icon: "repair" as const, label: "Engineering Service" },
-          ].map((item) => (
+          {capabilities.map((item) => (
             <div key={item.label} className="flex items-center gap-3 px-4 py-4">
-              <Icon name={item.icon} className="w-6 h-6 text-accent" />
+              <Icon name={item.icon as any} className="w-6 h-6 text-accent" />
               <span className="text-sm font-medium text-white/85">{item.label}</span>
             </div>
           ))}

@@ -2,6 +2,7 @@
 
 import { Icon } from "./Icon";
 import { contact } from "@/data/contact";
+import { getDictionary } from "@/lib/i18n";
 import { useState } from "react";
 
 const iconMap: Record<string, string> = {
@@ -10,7 +11,7 @@ const iconMap: Record<string, string> = {
   location: "construction",
 };
 
-export function ContactPage() {
+export function ContactPage({ locale = "en" }: { locale?: string }) {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -20,6 +21,12 @@ export function ContactPage() {
     enquiry_type: "",
     message: "",
   });
+
+  const t = getDictionary(locale);
+  const u = t.ui.contact;
+  const c = t.ui.common;
+  const content = contact.localized[locale] ?? contact.localized.en;
+  const options = content.formFields[4]?.options ?? [];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,9 +41,9 @@ export function ContactPage() {
       <div className="bg-[#f0f2f5] border-b border-gray-200">
         <div className="container-x py-3">
           <nav className="flex items-center gap-2 text-xs text-steel/60">
-            <a href="/" className="hover:text-accent transition-colors">Home</a>
+            <a href={`/${locale}`} className="hover:text-accent transition-colors">{c.home}</a>
             <span>/</span>
-            <span className="text-steel/40">Contact</span>
+            <span className="text-steel/40">{u.breadcrumb}</span>
           </nav>
         </div>
       </div>
@@ -45,12 +52,12 @@ export function ContactPage() {
       <section className="bg-primary py-14 text-white">
         <div className="container-x">
           <div className="max-w-3xl">
-            <span className="tag-chip mb-4">Contact Us</span>
+            <span className="tag-chip mb-4">{u.tag}</span>
             <h1 className="font-display text-3xl md:text-5xl font-bold tracking-wide">
-              Get In Touch
+              {u.heroTitle}
             </h1>
             <p className="mt-4 text-lg text-white/70">
-              WhatsApp is the fastest way to reach us. Fill in the form or message us directly.
+              {u.heroDesc}
             </p>
           </div>
         </div>
@@ -60,8 +67,8 @@ export function ContactPage() {
         <div className="grid gap-10 lg:grid-cols-3">
           {/* QUICK ACTIONS */}
           <div className="space-y-5">
-            <h2 className="font-display text-xl font-bold text-primary">Quick Contact</h2>
-            {contact.quickActions.map((action) => (
+            <h2 className="font-display text-xl font-bold text-primary">{u.quickContact}</h2>
+            {content.quickActions.map((action) => (
               <a
                 key={action.label}
                 href={action.href}
@@ -80,35 +87,35 @@ export function ContactPage() {
             ))}
 
             <div className="rounded-xl border border-gray-100 bg-white p-5">
-              <h3 className="font-display text-sm font-semibold text-primary mb-3">Workshop Hours</h3>
+              <h3 className="font-display text-sm font-semibold text-primary mb-3">{u.workshopHours}</h3>
               <p className="text-sm text-steel/80">{contact.hours}</p>
-              <p className="mt-2 text-xs text-steel/60">Walk-ins welcome during business hours.</p>
+              <p className="mt-2 text-xs text-steel/60">{u.walkInsWelcome}</p>
             </div>
           </div>
 
           {/* FORM */}
           <div className="lg:col-span-2">
             <div className="rounded-xl border border-gray-100 bg-white p-8 shadow-card">
-              <h2 className="font-display text-2xl font-bold text-primary mb-1">Send an Enquiry</h2>
+              <h2 className="font-display text-2xl font-bold text-primary mb-1">{u.sendEnquiry}</h2>
               <p className="text-sm text-steel/60 mb-7">
-                Or message us directly on{" "}
+                {u.orMessageUsOn}{" "}
                 <a
                   href={contact.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent hover:underline font-medium"
                 >
-                  WhatsApp
+                  {u.whatsapp}
                 </a>{" "}
-                — usually faster.
+                {u.usuallyFaster}
               </p>
 
               {submitted ? (
                 <div className="rounded-xl border border-green-200 bg-green-50 p-6 text-center">
                   <div className="text-3xl mb-3">✅</div>
-                  <h3 className="font-display text-lg font-bold text-green-800 mb-2">Enquiry Received!</h3>
+                  <h3 className="font-display text-lg font-bold text-green-800 mb-2">{u.enquiryReceived}</h3>
                   <p className="text-sm text-green-700">
-                    We&apos;ll get back to you within 1 business day. For faster service, WhatsApp us directly.
+                    {u.enquiryReceivedDesc}
                   </p>
                   <a
                     href={contact.whatsappLink}
@@ -117,7 +124,7 @@ export function ContactPage() {
                     className="mt-4 inline-flex items-center gap-2 rounded bg-accent px-5 py-2.5 text-sm font-semibold hover:bg-accent-dark transition-colors"
                   >
                     <Icon name="whatsapp" className="w-4 h-4" />
-                    Chat on WhatsApp
+                    {u.chatOnWhatsapp}
                   </a>
                 </div>
               ) : (
@@ -125,7 +132,7 @@ export function ContactPage() {
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-steel/70 mb-1.5">
-                        Your Name *
+                        {u.yourName}
                       </label>
                       <input
                         type="text"
@@ -138,14 +145,14 @@ export function ContactPage() {
                     </div>
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-steel/70 mb-1.5">
-                        Company
+                        {u.company}
                       </label>
                       <input
                         type="text"
                         value={form.company}
                         onChange={(e) => setForm({ ...form, company: e.target.value })}
                         className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors"
-                        placeholder="(Optional)"
+                        placeholder={u.optional}
                       />
                     </div>
                   </div>
@@ -153,7 +160,7 @@ export function ContactPage() {
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-steel/70 mb-1.5">
-                        Phone / WhatsApp *
+                        {u.phone}
                       </label>
                       <input
                         type="tel"
@@ -166,21 +173,21 @@ export function ContactPage() {
                     </div>
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-steel/70 mb-1.5">
-                        Email
+                        {u.email}
                       </label>
                       <input
                         type="email"
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                         className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors"
-                        placeholder="(Optional)"
+                        placeholder={u.optional}
                       />
                     </div>
                   </div>
 
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-steel/70 mb-1.5">
-                      What do you need? *
+                      {u.whatDoYouNeed}
                     </label>
                     <select
                       required
@@ -188,8 +195,8 @@ export function ContactPage() {
                       onChange={(e) => setForm({ ...form, enquiry_type: e.target.value })}
                       className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors"
                     >
-                      <option value="">Select an option...</option>
-                      {(contact.formFields[4]?.options ?? []).map((opt) => (
+                      <option value="">{u.selectOption}</option>
+                      {options.map((opt) => (
                         <option key={opt} value={opt}>{opt}</option>
                       ))}
                     </select>
@@ -197,7 +204,7 @@ export function ContactPage() {
 
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-steel/70 mb-1.5">
-                      Describe your requirement *
+                      {u.describeRequirement}
                     </label>
                     <textarea
                       required
@@ -205,7 +212,7 @@ export function ContactPage() {
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
                       className="w-full rounded-lg border border-gray-200 px-4 py-2.5 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent transition-colors resize-none"
-                      placeholder="e.g. 1/2 inch hydraulic hose, 2m long, BSP fittings both ends, for excavator CAT 320"
+                      placeholder={content.formFields[5]?.placeholder ?? ""}
                     />
                   </div>
 
@@ -214,7 +221,7 @@ export function ContactPage() {
                       type="submit"
                       className="flex items-center justify-center gap-2 rounded bg-accent px-7 py-3 font-semibold hover:bg-accent-dark transition-colors"
                     >
-                      Submit Enquiry
+                      {u.submitEnquiry}
                     </button>
                     <a
                       href={contact.whatsappLink}
@@ -223,7 +230,7 @@ export function ContactPage() {
                       className="flex items-center justify-center gap-2 rounded border border-gray-200 px-7 py-3 font-semibold hover:bg-gray-50 transition-colors"
                     >
                       <Icon name="whatsapp" className="w-5 h-5" />
-                      Faster: WhatsApp Us
+                      {u.fasterWhatsapp}
                     </a>
                   </div>
                 </form>

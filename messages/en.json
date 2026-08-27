@@ -1,0 +1,300 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "services": "Services",
+    "industries": "Industries",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp"
+  },
+  "hero": {
+    "tagline": "Hydraulic Hose Assembly & Hydraulic Fittings",
+    "title1": "Hydraulic Hose Assembly",
+    "title2": "& Hydraulic Fittings",
+    "desc": "Professional hydraulic hose assembly for mobile and industrial applications. Custom length, custom fittings, precision crimping — engineered in Johor, Malaysia.",
+    "cta1": "Request a Quote",
+    "cta2": "WhatsApp Us",
+    "capabilities": ["Hydraulic Hose", "Fittings", "Hose Assembly", "Engineering Service"]
+  },
+  "photoQuote": {
+    "tag": "Photo Quote",
+    "title1": "Don't know the spec?",
+    "title2": "Just send us a photo.",
+    "desc": "Got a worn or burst hose and no idea what to order? Snap a photo on WhatsApp — we'll identify the fitting, hose type and size, then give you a price. No part number needed.",
+    "cta1": "Send Photo on WhatsApp",
+    "cta2": "Request a Quote",
+    "steps": [
+      { "t": "Snap a photo", "d": "Take a clear photo of your hose or fitting." },
+      { "t": "Send it to us", "d": "WhatsApp it to us — that's it." },
+      { "t": "Get your quote", "d": "We identify the spec and price it fast." }
+    ]
+  },
+  "services": {
+    "tag": "Our Services",
+    "title": "What We Can Do For You",
+    "desc": "From hose assembly to emergency replacement — we keep your machinery running.",
+    "items": {
+      "hydraulic-hose-assembly": {
+        "title": "Hydraulic Hose Assembly",
+        "short": "Hose Assembly",
+        "desc": "Provide sample or specification → Terra identifies → assembles → pressure tests → delivers. Complete hose assembly service."
+      },
+      "hose-crimping": {
+        "title": "Hose Crimping",
+        "short": "Crimping",
+        "desc": "Precision crimping for hydraulic hoses up to heavy-duty sizes, using calibrated crimpers for a reliable, leak-free connection."
+      },
+      "hose-replacement": {
+        "title": "Hose Replacement",
+        "short": "Replacement",
+        "desc": "Fast replacement of damaged or failed hydraulic hoses. Bring the old hose in or send a photo, we identify and match it."
+      },
+      "hydraulic-hose-repair": {
+        "title": "Hydraulic Hose Repair",
+        "short": "Repair",
+        "desc": "On-the-spot repair and re-termination of hydraulic hose assemblies to minimise machine downtime."
+      },
+      "custom-hose-assembly": {
+        "title": "Custom Hose Assembly",
+        "short": "Custom",
+        "desc": "Custom length, custom fittings and custom orientation. Built to your exact specification and application."
+      },
+      "onsite-emergency": {
+        "title": "On-Site / Emergency Service",
+        "short": "On-Site",
+        "desc": "Mobile hose replacement and emergency support for excavators, machinery and factory equipment."
+      }
+    }
+  },
+  "products": {
+    "tag": "Products",
+    "title": "Hydraulic Hose & Fittings Range",
+    "desc": "Product categories we stock and assemble. Need a specific spec? Send us a photo or sample.",
+    "items": {
+      "hydraulic-hose": {
+        "name": "Hydraulic Hose",
+        "sub": "High-pressure hose",
+        "desc": "High-pressure hydraulic hoses for mobile and industrial applications."
+      },
+      "hydraulic-fittings": {
+        "name": "Hydraulic Fittings",
+        "sub": "All thread standards",
+        "desc": "Wide range of hydraulic fittings and couplings in all thread standards."
+      },
+      "ferrules": {
+        "name": "Ferrules",
+        "sub": "Crimp sleeves",
+        "desc": "Crimp ferrules and sleeves for secure hose terminations."
+      },
+      "adapters": {
+        "name": "Adapters",
+        "sub": "Thread converters",
+        "desc": "Adapters and connectors to bridge different thread and port types."
+      },
+      "o-rings-seals": {
+        "name": "O-Rings & Seals",
+        "sub": "Leak-free sealing",
+        "desc": "Hydraulic O-rings, seals and sealing kits for leak-free systems."
+      },
+      "accessories": {
+        "name": "Accessories",
+        "sub": "Clamps & guards",
+        "desc": "Hose clamps, protection sleeves and hydraulic accessories."
+      }
+    }
+  },
+  "why": {
+    "tag": "Why Terra",
+    "title": "Why Customers Choose Terra",
+    "desc": "Not just a hose supplier — a hydraulic engineering partner.",
+    "items": [
+      "Professional Hose Assembly",
+      "Wide Range of Hydraulic Fittings",
+      "Technical Hose Identification",
+      "Precision Crimping",
+      "Quality Inspection & Pressure Testing",
+      "Fast Turnaround",
+      "Custom Hose Assembly",
+      "Engineering Support"
+    ]
+  },
+  "approvals": {
+    "tag": "Certifications & Approvals",
+    "desc": "Our hydraulic hoses and assemblies are available with major marine & industrial type approvals including ABS, DNV, BV, LR (Lloyd's Register), RINA, CCS and others. Contact us for specific approval requirements."
+  },
+  "industries": {
+    "tag": "Industries",
+    "title": "Industries We Serve",
+    "desc": "Hydraulic solutions across mobile and industrial applications.",
+    "items": {
+      "construction": "Construction",
+      "agriculture": "Agriculture",
+      "manufacturing": "Manufacturing",
+      "heavy-machinery": "Heavy Machinery",
+      "industrial": "Industrial"
+    }
+  },
+  "technical": {
+    "tag": "Technical Guide",
+    "title": "We Know Hydraulics",
+    "desc": "Free technical guides to help you identify the right hose and fitting.",
+    "items": [
+      { "title": "Hydraulic Hose Size Guide", "desc": "Dash size, ID/OD, R1AT/R2AT/4SP/4SH, pressure & bend radius." },
+      { "title": "BSP vs JIS Thread Identification", "desc": "Identify BSPP, BSPT, JIS metric, and flare fittings." },
+      { "title": "ORFS Fittings Guide", "desc": "O-Ring Face Seal: male, female, O-ring types." },
+      { "title": "SAE Flange Code 61 vs Code 62", "desc": "3000 PSI vs 6000 PSI, flange sizes & configurations." },
+      { "title": "Crimping Guide", "desc": "Crimp diameter, tolerance, COL, skiving & QC." }
+    ]
+  },
+  "gallery": {
+    "tag": "Product Gallery",
+    "title": "Real Stock, Real Photos",
+    "desc": "Actual products we stock and assemble. Click to view — or WhatsApp us the size you need."
+  },
+  "finalCta": {
+    "title": "Need a Custom Hose Assembly?",
+    "desc": "Send us your sample, specification or a photo — we'll identify it, assemble it and deliver it. Mon–Sat: 8:30 AM – 6:00 PM.",
+    "cta1": "WhatsApp Us Now",
+    "cta2": "Request a Quote"
+  },
+  "footer": {
+    "productsTitle": "Products",
+    "servicesTitle": "Services",
+    "productsLinks": {
+      "hydraulic-hose": "Hydraulic Hose",
+      "hydraulic-fittings": "Hydraulic Fittings",
+      "ferrules": "Ferrules",
+      "adapters": "Adapters",
+      "o-rings-seals": "O-Rings & Seals"
+    },
+    "servicesLinks": {
+      "hydraulic-hose-assembly": "Hose Assembly",
+      "hose-crimping": "Hose Crimping",
+      "hose-replacement": "Hose Replacement",
+      "hydraulic-hose-repair": "Hose Repair",
+      "custom-hose-assembly": "Custom Assembly"
+    },
+    "rights": "All rights reserved."
+  },
+  "langSwitcher": {
+    "label": "Language"
+  },
+  "ui": {
+    "common": {
+      "home": "Home",
+      "products": "Products",
+      "services": "Services",
+      "industries": "Industries",
+      "technical": "Technical Guide",
+      "whatsappUsNow": "WhatsApp Us Now",
+      "enquireWhatsApp": "Enquire via WhatsApp",
+      "getQuote": "Get a Quote",
+      "call": "Call",
+      "notes": "Notes",
+      "quickEnquiry": "Quick Enquiry"
+    },
+    "product": {
+      "specifications": "Specifications",
+      "typesAvailable": "Types Available",
+      "standardsRatings": "Standards & Ratings",
+      "commonApplications": "Common Applications",
+      "viewStockPhotos": "View Our Stock Photos",
+      "stockPhotosDesc": "See actual product photos in our gallery. Click any image to WhatsApp us about that product.",
+      "goToGallery": "Go to Product Gallery →",
+      "quickEnquiryDesc": "Get stock check + price in minutes",
+      "commonSizes": "Common Sizes",
+      "materials": "Materials",
+      "otherProducts": "Other Products",
+      "needSpecificSpec": "Need a specific spec?",
+      "needSpecificSpecDesc": "Send us the hose size, fitting type, or a photo via WhatsApp."
+    },
+    "service": {
+      "howItWorks": "How It Works",
+      "whatsIncluded": "What's Included",
+      "suitableFor": "Suitable For",
+      "getQuoteDesc": "WhatsApp us — fastest response",
+      "otherServices": "Other Services",
+      "readyToStart": "Ready to get started?",
+      "readyToStartDesc": "WhatsApp us your requirements — we respond fast."
+    },
+    "industry": {
+      "commonChallenges": "Common Challenges",
+      "howTerraHelps": "How Terra Hose Helps",
+      "equipmentWeSupport": "Equipment We Support",
+      "needHoseFor": "Need Hose for {title}?",
+      "needHoseForDesc": "WhatsApp us your equipment model or a photo",
+      "otherIndustries": "Other Industries",
+      "relatedServices": "Related Services",
+      "equipmentDown": "Equipment down?",
+      "equipmentDownDesc": "Send us a photo via WhatsApp — we can identify the hose and quote fast.",
+      "getHelpFast": "Get Help Fast",
+      "relatedServiceNames": {
+        "hoseAssembly": "Hose Assembly",
+        "hoseReplacement": "Hose Replacement",
+        "hoseCrimping": "Hose Crimping"
+      }
+    },
+    "technical": {
+      "askForHelp": "Ask for Help",
+      "allGuides": "← All Technical Guides",
+      "technicalSpecs": "Technical Specifications",
+      "relatedProducts": "Related Products",
+      "shopProducts": "Shop the products mentioned in this guide",
+      "needHelpIdentify": "Need help identifying your part?",
+      "needHelpIdentifyDesc": "Not sure which spec you need? Send us a photo via WhatsApp — we identify it and quote you on the spot.",
+      "uploadPhotoQuote": "Upload Photo / Get Quote",
+      "requestFormalQuote": "Request Formal Quote",
+      "quickEnquiryDesc": "Get identification help + quote in minutes",
+      "ourServices": "Our Services",
+      "serviceNames": {
+        "customHoseAssembly": "Custom Hose Assembly",
+        "hoseCrimping": "Hose Crimping Service",
+        "hoseReplacement": "Hose Replacement"
+      }
+    },
+    "about": {
+      "breadcrumb": "About Us",
+      "tag": "About Us",
+      "heroTitle": "Terra Hose & Hydraulic Engineering",
+      "heroDesc": "Hydraulic hose assembly specialist based in Johor, Malaysia. We help customers identify, supply, and install the right hydraulic hose and fittings — fast.",
+      "capabilities": "Our Capabilities",
+      "team": "Our Team",
+      "getInTouch": "Get In Touch",
+      "whatsappUs": "WhatsApp Us",
+      "whatWeDontDo": "What We Don't Do",
+      "whatWeDontDoDesc": "We are honest about our capabilities. We do not claim to be an authorized distributor for any brand we are not. If we don't have it, we will tell you — and try to point you in the right direction.",
+      "ourProductsServices": "Our Products & Services",
+      "browseProducts": "Browse Products →",
+      "viewServices": "View Services →",
+      "industriesWeServe": "Industries We Serve →",
+      "productGallery": "Product Gallery →"
+    },
+    "contact": {
+      "breadcrumb": "Contact",
+      "tag": "Contact Us",
+      "heroTitle": "Get In Touch",
+      "heroDesc": "WhatsApp is the fastest way to reach us. Fill in the form or message us directly.",
+      "quickContact": "Quick Contact",
+      "workshopHours": "Workshop Hours",
+      "walkInsWelcome": "Walk-ins welcome during business hours.",
+      "sendEnquiry": "Send an Enquiry",
+      "orMessageUsOn": "Or message us directly on",
+      "whatsapp": "WhatsApp",
+      "usuallyFaster": "— usually faster.",
+      "enquiryReceived": "Enquiry Received!",
+      "enquiryReceivedDesc": "We'll get back to you within 1 business day. For faster service, WhatsApp us directly.",
+      "chatOnWhatsapp": "Chat on WhatsApp",
+      "yourName": "Your Name *",
+      "company": "Company",
+      "phone": "Phone / WhatsApp *",
+      "email": "Email",
+      "whatDoYouNeed": "What do you need? *",
+      "selectOption": "Select an option...",
+      "describeRequirement": "Describe your requirement *",
+      "optional": "(Optional)",
+      "submitEnquiry": "Submit Enquiry",
+      "fasterWhatsapp": "Faster: WhatsApp Us"
+    }
+  }
+}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Icon } from "./Icon";
 import { SectionHeading } from "./SectionHeading";
 import { waLink } from "@/lib/site";
+import { getDictionary } from "@/lib/i18n";
 
 interface Spec {
   label: string;
@@ -14,6 +15,7 @@ interface ProductType {
 }
 
 interface ProductCategoryProps {
+  locale?: string;
   tag?: string;
   title: string;
   description: string;
@@ -25,11 +27,11 @@ interface ProductCategoryProps {
   applications?: string[];
   notes?: string[];
   whatsappSubject?: string;
-  parentSlug?: string;
   siblings?: { slug: string; name: string }[];
 }
 
 export function ProductCategoryPage({
+  locale = "en",
   tag,
   title,
   description,
@@ -41,9 +43,12 @@ export function ProductCategoryPage({
   applications = [],
   notes = [],
   whatsappSubject,
-  parentSlug = "/products",
   siblings = [],
 }: ProductCategoryProps) {
+  const t = getDictionary(locale);
+  const c = t.ui.common;
+  const p = t.ui.product;
+
   const waHref = waLink(
     whatsappSubject ??
       `Hi Terra Hose, I'm interested in ${title}. Can you check stock and give me a price?`
@@ -55,10 +60,10 @@ export function ProductCategoryPage({
       <div className="bg-[#f0f2f5] border-b border-gray-200">
         <div className="container-x py-3">
           <nav className="flex items-center gap-2 text-xs text-steel/60">
-            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
+            <Link href={`/${locale}`} className="hover:text-accent transition-colors">{c.home}</Link>
             <span>/</span>
-            <Link href={parentSlug} className="hover:text-accent transition-colors">
-              {parentSlug === "/products" ? "Products" : parentSlug === "/services" ? "Services" : "Products"}
+            <Link href={`/${locale}/products`} className="hover:text-accent transition-colors">
+              {c.products}
             </Link>
             <span>/</span>
             <span className="text-steel/40">{title}</span>
@@ -81,9 +86,8 @@ export function ProductCategoryPage({
                 className="flex items-center justify-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold hover:bg-accent-dark transition-colors"
               >
                 <Icon name="whatsapp" className="w-5 h-5" />
-                Enquire via WhatsApp
+                {c.enquireWhatsApp}
               </a>
-              <a href={`tel:${waHref.replace("https://wa.me/", "")}`} className="hidden" />
             </div>
           </div>
         </div>
@@ -95,7 +99,7 @@ export function ProductCategoryPage({
           <div className="lg:col-span-2 space-y-10">
             {specs.length > 0 && (
               <div>
-                <h2 className="font-display text-2xl font-bold text-primary mb-5">Specifications</h2>
+                <h2 className="font-display text-2xl font-bold text-primary mb-5">{p.specifications}</h2>
                 <div className="overflow-hidden rounded-xl border border-gray-100 shadow-card">
                   <table className="w-full text-sm">
                     <tbody>
@@ -113,7 +117,7 @@ export function ProductCategoryPage({
 
             {types.length > 0 && (
               <div>
-                <h2 className="font-display text-2xl font-bold text-primary mb-5">Types Available</h2>
+                <h2 className="font-display text-2xl font-bold text-primary mb-5">{p.typesAvailable}</h2>
                 <div className="grid gap-4 sm:grid-cols-2">
                   {types.map((t) => (
                     <div key={t.name} className="rounded-xl border border-gray-100 bg-white p-5 shadow-card">
@@ -129,7 +133,7 @@ export function ProductCategoryPage({
 
             {standards.length > 0 && (
               <div>
-                <h2 className="font-display text-2xl font-bold text-primary mb-5">Standards & Ratings</h2>
+                <h2 className="font-display text-2xl font-bold text-primary mb-5">{p.standardsRatings}</h2>
                 <div className="flex flex-wrap gap-3">
                   {standards.map((s) => (
                     <span key={s} className="rounded-full bg-accent/10 border border-accent/30 px-4 py-2 text-sm font-medium text-accent">
@@ -142,7 +146,7 @@ export function ProductCategoryPage({
 
             {applications.length > 0 && (
               <div>
-                <h2 className="font-display text-2xl font-bold text-primary mb-5">Common Applications</h2>
+                <h2 className="font-display text-2xl font-bold text-primary mb-5">{p.commonApplications}</h2>
                 <ul className="space-y-2.5">
                   {applications.map((a) => (
                     <li key={a} className="flex items-start gap-3 text-sm text-steel/80">
@@ -156,7 +160,7 @@ export function ProductCategoryPage({
 
             {notes.length > 0 && (
               <div className="rounded-xl border border-amber-200 bg-amber-50 p-6">
-                <h3 className="font-display text-base font-semibold text-amber-800 mb-3">📋 Notes</h3>
+                <h3 className="font-display text-base font-semibold text-amber-800 mb-3">📋 {c.notes}</h3>
                 <ul className="space-y-2">
                   {notes.map((n) => (
                     <li key={n} className="text-sm text-amber-700">• {n}</li>
@@ -167,12 +171,10 @@ export function ProductCategoryPage({
 
             {/* PHOTO GALLERY LINK */}
             <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-card">
-              <h3 className="font-display text-lg font-semibold text-primary mb-2">View Our Stock Photos</h3>
-              <p className="text-sm text-steel/70 mb-4">
-                See actual product photos in our gallery. Click any image to WhatsApp us about that product.
-              </p>
-              <Link href="/#gallery" className="text-sm font-medium text-accent hover:underline">
-                Go to Product Gallery →
+              <h3 className="font-display text-lg font-semibold text-primary mb-2">{p.viewStockPhotos}</h3>
+              <p className="text-sm text-steel/70 mb-4">{p.stockPhotosDesc}</p>
+              <Link href={`/${locale}/#gallery`} className="text-sm font-medium text-accent hover:underline">
+                {p.goToGallery}
               </Link>
             </div>
           </div>
@@ -181,8 +183,8 @@ export function ProductCategoryPage({
           <div className="space-y-6">
             {/* QUICK ENQUIRY */}
             <div className="rounded-xl border border-accent/30 bg-white p-6 shadow-card">
-              <h3 className="font-display text-lg font-semibold text-primary mb-1">Quick Enquiry</h3>
-              <p className="text-xs text-steel/60 mb-4">Get stock check + price in minutes</p>
+              <h3 className="font-display text-lg font-semibold text-primary mb-1">{c.quickEnquiry}</h3>
+              <p className="text-xs text-steel/60 mb-4">{p.quickEnquiryDesc}</p>
               <a
                 href={waHref}
                 target="_blank"
@@ -190,18 +192,18 @@ export function ProductCategoryPage({
                 className="flex items-center justify-center gap-2 rounded bg-accent px-5 py-3 text-sm font-semibold hover:bg-accent-dark transition-colors"
               >
                 <Icon name="whatsapp" className="w-5 h-5" />
-                WhatsApp Us Now
+                {c.whatsappUsNow}
               </a>
               <a href={`tel:+60167728500`} className="mt-3 flex items-center justify-center gap-2 rounded border border-gray-200 px-5 py-2.5 text-sm font-medium hover:bg-gray-50 transition-colors">
                 <Icon name="phone" className="w-4 h-4" />
-                Call +60 16-772 8500
+                {c.call} +60 16-772 8500
               </a>
             </div>
 
             {/* SIZES */}
             {sizes.length > 0 && (
               <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-card">
-                <h3 className="font-display text-base font-semibold text-primary mb-3">Common Sizes</h3>
+                <h3 className="font-display text-base font-semibold text-primary mb-3">{p.commonSizes}</h3>
                 <div className="flex flex-wrap gap-2">
                   {sizes.map((s) => (
                     <span key={s} className="rounded-full bg-steel/5 px-3 py-1 text-xs font-medium text-steel">
@@ -215,7 +217,7 @@ export function ProductCategoryPage({
             {/* MATERIALS */}
             {materials.length > 0 && (
               <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-card">
-                <h3 className="font-display text-base font-semibold text-primary mb-3">Materials</h3>
+                <h3 className="font-display text-base font-semibold text-primary mb-3">{p.materials}</h3>
                 <div className="flex flex-wrap gap-2">
                   {materials.map((m) => (
                     <span key={m} className="rounded-full bg-primary/5 px-3 py-1 text-xs font-medium text-primary">
@@ -229,12 +231,12 @@ export function ProductCategoryPage({
             {/* SIBLING PAGES */}
             {siblings.length > 0 && (
               <div className="rounded-xl border border-gray-100 bg-white p-6 shadow-card">
-                <h3 className="font-display text-base font-semibold text-primary mb-3">Other Products</h3>
+                <h3 className="font-display text-base font-semibold text-primary mb-3">{p.otherProducts}</h3>
                 <ul className="space-y-2">
                   {siblings.map((s) => (
                     <li key={s.slug}>
                       <Link
-                        href={`/products/${s.slug}`}
+                        href={`/${locale}/products/${s.slug}`}
                         className="text-sm text-steel/70 hover:text-accent transition-colors"
                       >
                         → {s.name}
@@ -252,8 +254,8 @@ export function ProductCategoryPage({
       <section className="bg-[#f0f2f5] py-12">
         <div className="container-x flex flex-col sm:flex-row items-center justify-between gap-5">
           <div>
-            <h3 className="font-display text-xl font-bold text-primary">Need a specific spec?</h3>
-            <p className="mt-1 text-sm text-steel/70">Send us the hose size, fitting type, or a photo via WhatsApp.</p>
+            <h3 className="font-display text-xl font-bold text-primary">{p.needSpecificSpec}</h3>
+            <p className="mt-1 text-sm text-steel/70">{p.needSpecificSpecDesc}</p>
           </div>
           <a
             href={waHref}
@@ -262,7 +264,7 @@ export function ProductCategoryPage({
             className="flex items-center gap-2 rounded bg-accent px-7 py-3.5 font-semibold shrink-0 hover:bg-accent-dark transition-colors"
           >
             <Icon name="whatsapp" className="w-5 h-5" />
-            Get a Quote
+            {c.getQuote}
           </a>
         </div>
       </section>

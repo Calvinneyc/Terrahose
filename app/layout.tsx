@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Inter } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { MobileCTA } from "@/components/MobileCTA";
 import { site } from "@/lib/site";
 import OrganizationJsonLd from "@/components/OrganizationJsonLd";
 
@@ -64,7 +61,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
@@ -72,10 +73,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col pb-14 lg:pb-0">
         <OrganizationJsonLd />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <MobileCTA />
+        {children}
       </body>
     </html>
   );

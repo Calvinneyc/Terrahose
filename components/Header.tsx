@@ -3,20 +3,22 @@
 import { useState } from "react";
 import Link from "next/link";
 import { site, waDefault } from "@/lib/site";
+import { getDictionary } from "@/lib/i18n";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Icon } from "./Icon";
 
-const nav = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/products", label: "Products" },
-  { href: "/services", label: "Services" },
-  { href: "/industries", label: "Industries" },
-  { href: "/contact", label: "Contact" },
-];
-// NOTE: /technical (Sprint 4) — temporarily omitted to avoid 404
-
-export function Header() {
+export function Header({ locale = "en" }: { locale?: string }) {
   const [open, setOpen] = useState(false);
+  const t = getDictionary(locale);
+
+  const nav = [
+    { href: `/${locale}`, label: t.nav.home },
+    { href: `/${locale}/about`, label: t.nav.about },
+    { href: `/${locale}/products`, label: t.nav.products },
+    { href: `/${locale}/services`, label: t.nav.services },
+    { href: `/${locale}/industries`, label: t.nav.industries },
+    { href: `/${locale}/contact`, label: t.nav.contact },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-primary text-white shadow-lg">
@@ -38,7 +40,7 @@ export function Header() {
       {/* 主导航 */}
       <div className="container-x flex items-center justify-between py-3">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link href={`/${locale}`} className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <img src="/logo.jpg" alt="Terra Hose & Hydraulic Engineering" className="h-14 w-auto object-contain" />
         </Link>
 
@@ -56,6 +58,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
+          <LanguageSwitcher current={locale} />
           <a
             href={waDefault}
             target="_blank"
@@ -63,7 +66,7 @@ export function Header() {
             className="flex items-center gap-2 rounded bg-accent px-4 py-2 text-sm font-semibold hover:bg-accent-dark transition-colors"
           >
             <Icon name="whatsapp" className="w-4 h-4" />
-            WhatsApp
+            {t.nav.whatsapp}
           </a>
         </div>
 
@@ -93,15 +96,18 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href={waDefault}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 mb-2 flex items-center justify-center gap-2 rounded bg-accent px-4 py-3 text-sm font-semibold"
-            >
-              <Icon name="whatsapp" className="w-4 h-4" />
-              WhatsApp Us
-            </a>
+            <div className="mt-3 mb-2 flex items-center justify-between gap-3">
+              <LanguageSwitcher current={locale} />
+              <a
+                href={waDefault}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 rounded bg-accent px-4 py-3 text-sm font-semibold"
+              >
+                <Icon name="whatsapp" className="w-4 h-4" />
+                {t.nav.whatsapp}
+              </a>
+            </div>
           </div>
         </nav>
       )}

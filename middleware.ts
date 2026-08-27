@@ -16,16 +16,23 @@ function getLocale(request: NextRequest): Locale {
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const first = pathname.split("/").filter(Boolean)[0] ?? "";
 
-  // 仅处理根路径：重定向到对应语言首页
+  // 已有语言前缀 → 放行
+  if ((locales as readonly string[]).includes(first)) {
+    return NextResponse.next();
+  }
+
+  // 无语言前缀（/, /about, /products/xxx ...）→ 重定向到对应语言
+  // 根路径按 cookie/Accept-Language 推断（307，目标随用户变化）；
+  // 其余统一到默认语言（308 永久，告知搜索引擎已迁移）
   if (pathname === "/") {
     const locale = getLocale(request);
     return NextResponse.redirect(new URL(`/${locale}`, request.url));
   }
-
-  return NextResponse.next();
+  return NextResponse.redirect(new URL(`/${defaultLocale}${pathname}`, request.url), 308);
 }
 
 export const config = {
-  matcher: ["/"],
+  matcher: ["/((?!api|_next|favicon.ico|logo.jpg|og-image.jpg|robots.txt|sitemap.xml|images).*)"],
 };

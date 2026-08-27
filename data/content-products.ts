@@ -32,7 +32,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       specs: [
         { label: "Standards", value: "SAE 100 R1AT / R2AT, EN 853 1SN / 2SN, EN 856 4SP / 4SH, SAE 100 R13" },
         { label: "Size Range", value: "1/4\" (6mm) to 2\" (50mm) ID" },
-        { label: "Working Pressure", value: "Up to 350 bar (R13)" },
+        { label: "Working Pressure", value: "Up to 420 bar / 6000 psi (4SH)" },
         { label: "Temperature Range", value: "-40°C to +100°C (standard NBR)" },
         { label: "Cover", value: "Synthetic rubber, weather and abrasion resistant" },
         { label: "Reinforcement", value: "One or two wire braid (R1AT/R2AT), four spiral (4SP/4SH), four/six spiral (R13)" },
@@ -72,7 +72,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       specs: [
         { label: "标准", value: "SAE 100 R1AT / R2AT、EN 853 1SN / 2SN、EN 856 4SP / 4SH、SAE 100 R13" },
         { label: "尺寸范围", value: "内径 1/4\"（6mm）至 2\"（50mm）" },
-        { label: "工作压力", value: "最高 350 bar（R13）" },
+        { label: "工作压力", value: "最高 420 bar / 6000 psi（4SH）" },
         { label: "温度范围", value: "-40°C 至 +100°C（标准 NBR）" },
         { label: "外胶层", value: "合成橡胶，耐候耐磨损" },
         { label: "增强层", value: "一或二层钢丝编织（R1AT/R2AT）、四层缠绕（4SP/4SH）、四/六层缠绕（R13）" },
@@ -112,7 +112,7 @@ export const productContent: Record<string, Record<Locale, ProductCategoryConten
       specs: [
         { label: "Piawaian", value: "SAE 100 R1AT / R2AT, EN 853 1SN / 2SN, EN 856 4SP / 4SH, SAE 100 R13" },
         { label: "Julat Saiz", value: "ID 1/4\" (6mm) hingga 2\" (50mm)" },
-        { label: "Tekanan Kerja", value: "Sehingga 350 bar (R13)" },
+        { label: "Tekanan Kerja", value: "Sehingga 420 bar / 6000 psi (4SH)" },
         { label: "Julat Suhu", value: "-40°C hingga +100°C (NBR standard)" },
         { label: "Lapisan Luar", value: "Getah sintetik, tahan cuaca dan lelasan" },
         { label: "Tetulang", value: "Satu atau dua jalinan dawai (R1AT/R2AT), empat lingkaran (4SP/4SH), empat/enam lingkaran (R13)" },

@@ -17,7 +17,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = getDictionary(locale);
   return {
-    title: `${t.hero.title1} ${t.hero.title2} | Terra Hose`,
+    title: `${t.hero.title1} ${t.hero.title2}`,
     description: t.hero.desc,
     alternates: { canonical: `/${locale}` },
     openGraph: {

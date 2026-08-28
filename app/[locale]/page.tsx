@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Hero } from "@/components/Hero";
+import { ProductGallery } from "@/components/ProductGallery";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Icon, type IconName } from "@/components/Icon";
 import { getDictionary } from "@/lib/i18n";
-import { site, waLink, waDefault } from "@/lib/site";
+import { site, waDefault } from "@/lib/site";
 import { technicalSlugs } from "@/lib/content";
 
 const serviceSlugs = [
@@ -295,8 +295,9 @@ export default async function Home({
             title={t.gallery.title}
             desc={t.gallery.desc}
           />
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {[
+          <ProductGallery
+            locale={locale}
+            images={[
               ...Array.from({ length: 9 }, (_, i) => ({
                 src: `/images/product-${i + 1}.jpg`,
                 alt: productAlts[i],
@@ -312,26 +313,8 @@ export default async function Home({
                 alt: "Hydraulic fittings — all thread standards (JIC, ORFS, BSP, JIS, NPT)",
                 wa: "photo 11",
               },
-            ].map((img) => (
-              <a
-                key={img.src}
-                href={waLink(`Hi Terra Hose, I'd like to enquire about this product (${img.wa}).`)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative overflow-hidden rounded-lg shadow-card"
-              >
-                <div className="relative aspect-[3/4]">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </a>
-            ))}
-          </div>
+            ]}
+          />
         </div>
       </section>
 

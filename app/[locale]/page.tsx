@@ -307,6 +307,11 @@ export default async function Home({
                 alt: "Assorted hydraulic fittings and adapters — Johor, Malaysia",
                 wa: "photo 10",
               },
+              {
+                src: "/images/all-thread.jpg",
+                alt: "Hydraulic fittings — all thread standards (JIC, ORFS, BSP, JIS, NPT)",
+                wa: "photo 11",
+              },
             ].map((img) => (
               <a
                 key={img.src}

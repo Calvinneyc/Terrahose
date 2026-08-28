@@ -67,18 +67,15 @@ export function Hero({ locale = "en" }: { locale?: string }) {
             </div>
           </div>
 
-          {/* Right: Product showcase — all thread standards */}
-          <div className="hidden lg:block flex-shrink-0 w-[400px] xl:w-[440px]">
-            <div className="rounded-2xl bg-white p-3 shadow-2xl ring-1 ring-white/20">
+          {/* Right: Company Logo */}
+          <div className="hidden lg:flex flex-shrink-0 items-center justify-center">
+            <div className="relative">
+              <div className="absolute -inset-8 bg-accent/10 rounded-full blur-2xl" />
               <img
-                src="/images/all-thread.jpg"
-                alt="Hydraulic fittings — all thread standards (JIC, ORFS, BSP, JIS, NPT)"
-                className="w-full h-auto rounded-xl border border-gray-100"
+                src="/logo.png"
+                alt="Terra Hose & Hydraulic Engineering"
+                className="relative w-[280px] h-auto object-contain drop-shadow-2xl rounded-2xl"
               />
-              <div className="mt-3 flex items-center justify-between px-1 pb-1">
-                <span className="text-xs font-semibold text-steel">All Thread Standards</span>
-                <span className="text-xs font-semibold text-accent">JIC · ORFS · BSP · JIS · NPT</span>
-              </div>
             </div>
           </div>
 

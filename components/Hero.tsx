@@ -72,7 +72,7 @@ export function Hero({ locale = "en" }: { locale?: string }) {
             <div className="relative">
               <div className="absolute -inset-8 bg-accent/10 rounded-full blur-2xl" />
               <img
-                src="/logo.png"
+                src="/images/logo.png"
                 alt="Terra Hose & Hydraulic Engineering"
                 className="relative w-[280px] h-auto object-contain drop-shadow-2xl rounded-2xl"
               />

@@ -296,18 +296,29 @@ export default async function Home({
             desc={t.gallery.desc}
           />
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-            {Array.from({ length: 9 }, (_, i) => (
+            {[
+              ...Array.from({ length: 9 }, (_, i) => ({
+                src: `/images/product-${i + 1}.jpg`,
+                alt: productAlts[i],
+                wa: `photo ${i + 1}`,
+              })),
+              {
+                src: "/images/fittings-mix.jpg",
+                alt: "Assorted hydraulic fittings and adapters — Johor, Malaysia",
+                wa: "photo 10",
+              },
+            ].map((img) => (
               <a
-                key={i}
-                href={waLink(`Hi Terra Hose, I'd like to enquire about this product (photo ${i + 1}).`)}
+                key={img.src}
+                href={waLink(`Hi Terra Hose, I'd like to enquire about this product (${img.wa}).`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden rounded-lg shadow-card"
               >
                 <div className="relative aspect-[3/4]">
                   <Image
-                    src={`/images/product-${i + 1}.jpg`}
-                    alt={productAlts[i]}
+                    src={img.src}
+                    alt={img.alt}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-300"

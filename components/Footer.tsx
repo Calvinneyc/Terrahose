@@ -2,6 +2,7 @@ import Link from "next/link";
 import { site, waDefault, telLink } from "@/lib/site";
 import { getDictionary } from "@/lib/i18n";
 import { Icon } from "./Icon";
+import { VisitorCounter } from "./VisitorCounter";
 
 export function Footer({ locale = "en" }: { locale?: string }) {
   const t = getDictionary(locale);
@@ -82,10 +83,13 @@ export function Footer({ locale = "en" }: { locale?: string }) {
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col sm:flex-row items-center justify-between gap-3 py-5 text-xs text-white/40">
           <span>© {new Date().getFullYear()} {site.name}. {t.footer.rights}</span>
-          <a href={waDefault} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-accent transition-colors">
-            <Icon name="whatsapp" className="w-3.5 h-3.5" />
-            WhatsApp: {site.phoneDisplay}
-          </a>
+          <div className="flex items-center gap-4">
+            <VisitorCounter label={t.footer.visitors} />
+            <a href={waDefault} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-accent transition-colors">
+              <Icon name="whatsapp" className="w-3.5 h-3.5" />
+              WhatsApp: {site.phoneDisplay}
+            </a>
+          </div>
         </div>
       </div>
     </footer>

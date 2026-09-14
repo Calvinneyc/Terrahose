@@ -29,12 +29,12 @@ export function Hero({ locale = "en" }: { locale?: string }) {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(90deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.93) 32%, rgba(255,255,255,0.5) 58%, rgba(255,255,255,0) 78%)",
+            "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.98) 34%, rgba(255,255,255,0.62) 55%, rgba(255,255,255,0) 70%)",
         }}
       />
 
       <div className="container-x relative py-16 md:py-24">
-        <div className="max-w-2xl">
+        <div className="max-w-xl">
           <span className="tag-chip mb-5">{t.hero.tagline}</span>
 
           <h1 className="font-display text-4xl md:text-6xl font-bold leading-[1.05] tracking-wide">
@@ -69,7 +69,7 @@ export function Hero({ locale = "en" }: { locale?: string }) {
       </div>
 
       {/* 底部能力条 */}
-      <div className="relative border-t border-primary/10 bg-white/80 backdrop-blur">
+      <div className="relative border-t border-primary/10 bg-white">
         <div className="container-x grid grid-cols-2 md:grid-cols-4 divide-x divide-primary/10">
           {capabilities.map((item) => (
             <div key={item.label} className="flex items-center gap-3 px-4 py-4">

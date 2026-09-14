@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { locales, localeNames, type Locale } from "@/lib/i18n";
+import { Icon } from "./Icon";
 
 const shortNames: Record<Locale, string> = {
   en: "EN",
@@ -14,8 +15,10 @@ export function LanguageSwitcher({ current }: { current: string }) {
     <div
       className="flex items-center gap-0.5 rounded-full border border-white/20 p-0.5"
       role="group"
-      aria-label="Language"
+      aria-label="三语切换 / Language (3 languages)"
+      title="三语切换：English / 中文 / Bahasa Melayu"
     >
+      <Icon name="globe" className="w-4 h-4 text-white/60 ml-1.5 shrink-0" />
       {locales.map((loc) => {
         const active = loc === current;
         return (

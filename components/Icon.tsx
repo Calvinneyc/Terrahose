@@ -20,7 +20,8 @@ export type IconName =
   | "machinery"
   | "industrial"
   | "check"
-  | "arrow";
+  | "arrow"
+  | "globe";
 
 const paths: Record<IconName, React.ReactNode> = {
   wrench: (
@@ -108,6 +109,13 @@ const paths: Record<IconName, React.ReactNode> = {
   ),
   check: <path d="m4 12 5 5L20 6" />,
   arrow: <path d="M5 12h14M13 6l6 6-6 6" />,
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18" />
+      <path d="M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" />
+    </>
+  ),
 };
 
 export function Icon({

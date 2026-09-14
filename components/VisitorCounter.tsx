@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const SESSION_KEY = "terra_visitor_counted";
-const START = 1000;
+const START = 1898;
 
 export function VisitorCounter({ label }: { label: string }) {
   const [count, setCount] = useState<number | null>(null);

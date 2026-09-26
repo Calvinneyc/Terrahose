@@ -31,6 +31,7 @@ const industrySlugs = [
   "manufacturing",
   "heavy-machinery",
   "industrial",
+  "shipbuilding",
 ] as const;
 
 const serviceIconMap: Record<string, IconName> = {
@@ -48,6 +49,7 @@ const industryIconMap: Record<string, IconName> = {
   manufacturing: "manufacturing",
   "heavy-machinery": "machinery",
   industrial: "industrial",
+  shipbuilding: "ship",
 };
 
 // SEO: descriptive product image alt text (image search + accessibility)
@@ -244,7 +246,7 @@ export default async function Home({
             title={t.industries.title}
             desc={t.industries.desc}
           />
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
             {industrySlugs.map((slug) => (
               <Link
                 key={slug}

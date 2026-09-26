@@ -19,6 +19,7 @@ export type IconName =
   | "manufacturing"
   | "machinery"
   | "industrial"
+  | "ship"
   | "check"
   | "arrow"
   | "globe";
@@ -105,6 +106,14 @@ const paths: Record<IconName, React.ReactNode> = {
     <>
       <path d="M3 21h18M5 21V6l5 3V6l5 3V6l5 3v12" />
       <path d="M7 12h2M12 12h2M17 12h2" />
+    </>
+  ),
+  ship: (
+    <>
+      <path d="M2 18h20" />
+      <path d="M3 14c1.5 1 3 1.5 5 1.5s3.5-.5 5-1.5 3-1.5 5-1.5 3.5.5 5 1.5" />
+      <path d="M12 3v8" />
+      <path d="M12 4 7 10h10l-5-6" />
     </>
   ),
   check: <path d="m4 12 5 5L20 6" />,

@@ -13,6 +13,7 @@ export const industries: Industry[] = [
   { slug: "manufacturing", name: "Manufacturing", icon: "manufacturing" },
   { slug: "heavy-machinery", name: "Heavy Machinery", icon: "machinery" },
   { slug: "industrial", name: "Industrial", icon: "industrial" },
+  { slug: "shipbuilding", name: "Shipbuilding & Marine", icon: "ship" },
 ];
 
 /**

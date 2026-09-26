@@ -15,6 +15,7 @@ const iconMap: Record<string, IconName> = {
   manufacturing: "manufacturing",
   "heavy-machinery": "machinery",
   industrial: "industrial",
+  shipbuilding: "ship",
 };
 
 const learnMore = {

@@ -132,7 +132,8 @@
       "agriculture": "Pertanian",
       "manufacturing": "Pembuatan",
       "heavy-machinery": "Jentera Berat",
-      "industrial": "Perindustrian"
+      "industrial": "Perindustrian",
+      "shipbuilding": "Pembinaan Kapal & Marin"
     }
   },
   "technical": {

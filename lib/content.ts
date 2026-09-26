@@ -25,6 +25,7 @@ export const industrySlugs = [
   "manufacturing",
   "heavy-machinery",
   "industrial",
+  "shipbuilding",
 ] as const;
 
 export const technicalSlugs = [

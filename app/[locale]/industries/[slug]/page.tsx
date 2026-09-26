@@ -11,6 +11,7 @@ const iconMap: Record<string, string> = {
   manufacturing: "manufacturing",
   "heavy-machinery": "machinery",
   industrial: "industrial",
+  shipbuilding: "ship",
 };
 
 export function generateStaticParams() {

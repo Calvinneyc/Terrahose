@@ -9,8 +9,8 @@
   --color-primary: #1a1a2e;        /* 深钢蓝 — 工业主色 */
   --color-primary-light: #24243d;
   --color-primary-dark: #0f0f1e;
-  --color-accent: #e8621a;         /* 工程橙 — CTA / 强调 */
-  --color-accent-dark: #c74f0e;
+  --color-accent: #c64a0a;         /* 工程橙 — CTA / 强调（WCAG AA ≥4.5:1 on white）*/
+  --color-accent-dark: #a03808;
   --color-gold: #f39c12;           /* 辅助金黄 */
   --color-steel: #2c3e50;          /* 深灰蓝 — 次级 */
   --color-steel-light: #3d5066;
@@ -59,7 +59,7 @@ html {
   border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #e8621a;
+  background: #c64a0a;
 }
 
 /* 通用 section 容器 */

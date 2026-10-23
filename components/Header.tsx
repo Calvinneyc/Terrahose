@@ -41,7 +41,7 @@ export function Header({ locale = "en" }: { locale?: string }) {
       <div className="container-x flex items-center justify-between py-3">
         {/* Logo */}
         <Link href={`/${locale}`} className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src="/logo.jpg" alt="Terra Hose & Hydraulic Engineering" className="h-14 w-auto object-contain" />
+          <img src="/logo.svg" alt="Terra Hose & Hydraulic Engineering — Logo" width="400" height="120" className="h-14 w-auto object-contain" />
         </Link>
 
         {/* 桌面导航 */}

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2d2d50"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c64a0a"/>
+      <stop offset="100%" stop-color="#e8621a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative grid lines (subtle industrial feel) -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="473" x2="1200" y2="473"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- Accent bar left -->
+  <rect x="0" y="0" width="8" height="630" fill="url(#accent)"/>
+
+  <!-- Orange glow circle (decorative) -->
+  <circle cx="950" cy="315" r="280" fill="#e8621a" fill-opacity="0.07"/>
+  <circle cx="950" cy="315" r="180" fill="#e8621a" fill-opacity="0.05"/>
+
+  <!-- Logo mark -->
+  <rect x="60" y="60" width="72" height="72" rx="14" fill="#e8621a"/>
+  <text x="96" y="116" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900" fill="#1a1a2e" text-anchor="middle">T</text>
+
+  <!-- Company name -->
+  <text x="150" y="100" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff" letter-spacing="2">TERRA HOSE</text>
+  <text x="150" y="126" font-family="Arial, sans-serif" font-size="13" font-weight="400" fill="#e8621a" letter-spacing="4">HYDRAULIC ENGINEERING</text>
+
+  <!-- Main headline -->
+  <text x="60" y="270" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff">Hydraulic Hose,</text>
+  <text x="60" y="350" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900" fill="#ffffff">Fittings &amp;</text>
+  <text x="60" y="430" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900" fill="#e8621a">Mobile Service</text>
+
+  <!-- Sub text -->
+  <text x="60" y="500" font-family="Arial, sans-serif" font-size="22" fill="#a0a8c0">On-site hose replacement · Johor Bahru, Malaysia</text>
+
+  <!-- Accent divider -->
+  <rect x="60" y="518" width="280" height="4" rx="2" fill="#e8621a"/>
+
+  <!-- Contact strip -->
+  <text x="60" y="565" font-family="Arial, sans-serif" font-size="20" fill="#a0a8c0">📱 +60 16-772 8500  ·  WhatsApp  ·  sales@terrahose.com</text>
+
+  <!-- Products tags -->
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="600">
+    <rect x="700" y="490" width="140" height="36" rx="18" fill="#e8621a" fill-opacity="0.15" stroke="#e8621a" stroke-opacity="0.4"/>
+    <text x="770" y="514" fill="#e8621a" text-anchor="middle">SAE 100 R1 / R2</text>
+
+    <rect x="850" y="490" width="120" height="36" rx="18" fill="#e8621a" fill-opacity="0.15" stroke="#e8621a" stroke-opacity="0.4"/>
+    <text x="910" y="514" fill="#e8621a" text-anchor="middle">EN 856 4SP</text>
+
+    <rect x="700" y="536" width="120" height="36" rx="18" fill="#e8621a" fill-opacity="0.15" stroke="#e8621a" stroke-opacity="0.4"/>
+    <text x="760" y="560" fill="#e8621a" text-anchor="middle">4SH / R15</text>
+
+    <rect x="850" y="536" width="160" height="36" rx="18" fill="#e8621a" fill-opacity="0.15" stroke="#e8621a" stroke-opacity="0.4"/>
+    <text x="930" y="560" fill="#e8621a" text-anchor="middle">JIC · ORFS · BSP</text>
+  </g>
+</svg>

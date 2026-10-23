@@ -131,27 +131,34 @@ export default async function ServicesPage({
       <div className="container-x py-14">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((s) => (
-            <Link
-              key={s.slug}
-              href={`/${locale}/services/${s.slug}`}
-              className={`group rounded-xl border bg-white p-7 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all ${
-                s.slug === "onsite-emergency"
-                  ? "border-accent ring-2 ring-accent/20"
-                  : "border-gray-100"
-              }`}
-            >
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent mb-4">
-                <Icon name={iconMap[s.slug] ?? "wrench"} className="w-6 h-6" />
+            <div key={s.slug} className={`group rounded-xl border bg-white shadow-card hover:shadow-card-hover transition-all ${
+              s.slug === "onsite-emergency"
+                ? "border-accent ring-2 ring-accent/20"
+                : "border-gray-100"
+            }`}>
+              <Link
+                href={`/${locale}/services/${s.slug}`}
+                aria-labelledby={`service-title-${s.slug}`}
+                className="block rounded-t-xl p-7 pb-4"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-accent mb-4">
+                  <Icon name={iconMap[s.slug] ?? "wrench"} className="w-6 h-6" />
+                </div>
+                <h2 id={`service-title-${s.slug}`} className="font-display text-xl font-semibold text-primary group-hover:text-accent transition-colors">
+                  {s.title}
+                </h2>
+                <p className="text-xs font-medium uppercase tracking-wider text-accent/70 mt-0.5">{s.short}</p>
+                <p className="mt-3 text-sm leading-relaxed text-steel/80">{s.desc}</p>
+              </Link>
+              <div className="px-7 pb-6">
+                <Link
+                  href={`/${locale}/services/${s.slug}`}
+                  className="text-sm font-medium text-accent hover:underline"
+                >
+                  {learnMore[locale] ?? learnMore.en}
+                </Link>
               </div>
-              <h2 className="font-display text-xl font-semibold text-primary group-hover:text-accent transition-colors">
-                {s.title}
-              </h2>
-              <p className="text-xs font-medium uppercase tracking-wider text-accent/70 mt-0.5">{s.short}</p>
-              <p className="mt-3 text-sm leading-relaxed text-steel/80">{s.desc}</p>
-              <div className="mt-5 text-sm font-medium text-accent group-hover:underline">
-                {learnMore[locale] ?? learnMore.en}
-              </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

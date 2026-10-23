@@ -3,7 +3,7 @@ import { site, waDefault } from "@/lib/site";
 import { getDictionary } from "@/lib/i18n";
 import { Icon } from "./Icon";
 
-const capabilityIcons = ["wrench", "crimp", "custom", "repair"] as const;
+const capabilityIcons = ["wrench", "crimp", "custom", "truck"] as const;
 
 /**
  * Hero — 第一屏必须立刻告诉客户 Terra 是谁、做什么、能拿到什么
@@ -45,6 +45,11 @@ export function Hero({ locale = "en" }: { locale?: string }) {
 
           <p className="mt-5 max-w-xl text-lg text-steel-light leading-relaxed">
             {t.hero.desc}
+          </p>
+          <p className="mt-3 max-w-xl text-base text-accent font-medium">
+            {locale === "zh" ? "🚐 也提供移动上门换管服务——我们到你现场更换软管。" :
+             locale === "ms" ? "🚐 Perkhidmatan penggantian hos mudah alih — kami datang ke tapak anda." :
+             "🚐 Also offering mobile hose replacement — we come to your site."}
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4">

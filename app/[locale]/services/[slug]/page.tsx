@@ -8,7 +8,7 @@ import { locales } from "@/lib/i18n";
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
     serviceSlugs
-      .filter((slug) => slug !== "onsite-emergency")
+
       .map((slug) => ({ locale, slug }))
   );
 }

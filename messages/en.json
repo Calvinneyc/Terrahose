@@ -12,7 +12,7 @@
     "tagline": "Hydraulic Hose Assembly & Hydraulic Fittings",
     "title1": "Hydraulic Hose Assembly",
     "title2": "& Hydraulic Fittings",
-    "desc": "Professional hydraulic hose assembly for mobile and industrial applications. Custom length, custom fittings, precision crimping 鈥?engineered in Johor, Malaysia.",
+    "desc": "Professional hydraulic hose assembly for mobile and industrial applications. Custom length, custom fittings, precision crimping — engineered in Johor, Malaysia.",
     "cta1": "Request a Quote",
     "cta2": "WhatsApp Us",
     "capabilities": ["Hydraulic Hose", "Fittings", "Hose Assembly", "Engineering Service"]
@@ -21,24 +21,24 @@
     "tag": "Photo Quote",
     "title1": "Don't know the spec?",
     "title2": "Just send us a photo.",
-    "desc": "Got a worn or burst hose and no idea what to order? Snap a photo on WhatsApp 鈥?we'll identify the fitting, hose type and size, then give you a price. No part number needed.",
+    "desc": "Got a worn or burst hose and no idea what to order? Snap a photo on WhatsApp — we'll identify the fitting, hose type and size, then give you a price. No part number needed.",
     "cta1": "Send Photo on WhatsApp",
     "cta2": "Request a Quote",
     "steps": [
       { "t": "Snap a photo", "d": "Take a clear photo of your hose or fitting." },
-      { "t": "Send it to us", "d": "WhatsApp it to us 鈥?that's it." },
+      { "t": "Send it to us", "d": "WhatsApp it to us — that's it." },
       { "t": "Get your quote", "d": "We identify the spec and price it fast." }
     ]
   },
   "services": {
     "tag": "Our Services",
     "title": "What We Can Do For You",
-    "desc": "From hose assembly to emergency replacement 鈥?we keep your machinery running.",
+    "desc": "From hose assembly to emergency replacement — we keep your machinery running.",
     "items": {
       "hydraulic-hose-assembly": {
         "title": "Hydraulic Hose Assembly",
         "short": "Hose Assembly",
-        "desc": "Provide sample or specification 鈫?Terra identifies 鈫?assembles 鈫?pressure tests 鈫?delivers. Complete hose assembly service."
+        "desc": "Provide sample or specification → Terra identifies → assembles → pressure tests → delivers. Complete hose assembly service."
       },
       "hose-crimping": {
         "title": "Hose Crimping",
@@ -107,7 +107,7 @@
   "why": {
     "tag": "Why Terra",
     "title": "Why Customers Choose Terra",
-    "desc": "Not just a hose supplier 鈥?a hydraulic engineering partner.",
+    "desc": "Not just a hose supplier — a hydraulic engineering partner.",
     "items": [
       "Professional Hose Assembly",
       "Wide Range of Hydraulic Fittings",
@@ -151,11 +151,11 @@
   "gallery": {
     "tag": "Product Gallery",
     "title": "Real Stock, Real Photos",
-    "desc": "Actual products we stock and assemble. Click to view 鈥?or WhatsApp us the size you need."
+    "desc": "Actual products we stock and assemble. Click to view — or WhatsApp us the size you need."
   },
   "finalCta": {
     "title": "Need a Custom Hose Assembly?",
-    "desc": "Send us your sample, specification or a photo 鈥?we'll identify it, assemble it and deliver it. Mon鈥揝at: 8:30 AM 鈥?6:00 PM.",
+    "desc": "Send us your sample, specification or a photo — we'll identify it, assemble it and deliver it. Mon–Sat: 8:30 AM — 6:00 PM.",
     "cta1": "WhatsApp Us Now",
     "cta2": "Request a Quote"
   },
@@ -203,7 +203,7 @@
       "commonApplications": "Common Applications",
       "viewStockPhotos": "View Our Stock Photos",
       "stockPhotosDesc": "See actual product photos in our gallery. Click any image to WhatsApp us about that product.",
-      "goToGallery": "Go to Product Gallery 鈫?,
+      "goToGallery": "Go to Product Gallery →",
       "quickEnquiryDesc": "Get stock check + price in minutes",
       "commonSizes": "Common Sizes",
       "materials": "Materials",
@@ -215,10 +215,10 @@
       "howItWorks": "How It Works",
       "whatsIncluded": "What's Included",
       "suitableFor": "Suitable For",
-      "getQuoteDesc": "WhatsApp us 鈥?fastest response",
+      "getQuoteDesc": "WhatsApp us — fastest response",
       "otherServices": "Other Services",
       "readyToStart": "Ready to get started?",
-      "readyToStartDesc": "WhatsApp us your requirements 鈥?we respond fast."
+      "readyToStartDesc": "WhatsApp us your requirements — we respond fast."
     },
     "industry": {
       "commonChallenges": "Common Challenges",
@@ -229,7 +229,7 @@
       "otherIndustries": "Other Industries",
       "relatedServices": "Related Services",
       "equipmentDown": "Equipment down?",
-      "equipmentDownDesc": "Send us a photo via WhatsApp 鈥?we can identify the hose and quote fast.",
+      "equipmentDownDesc": "Send us a photo via WhatsApp — we can identify the hose and quote fast.",
       "getHelpFast": "Get Help Fast",
       "relatedServiceNames": {
         "hoseAssembly": "Hose Assembly",
@@ -239,12 +239,12 @@
     },
     "technical": {
       "askForHelp": "Ask for Help",
-      "allGuides": "鈫?All Technical Guides",
+      "allGuides": "→ All Technical Guides",
       "technicalSpecs": "Technical Specifications",
       "relatedProducts": "Related Products",
       "shopProducts": "Shop the products mentioned in this guide",
       "needHelpIdentify": "Need help identifying your part?",
-      "needHelpIdentifyDesc": "Not sure which spec you need? Send us a photo via WhatsApp 鈥?we identify it and quote you on the spot.",
+      "needHelpIdentifyDesc": "Not sure which spec you need? Send us a photo via WhatsApp — we identify it and quote you on the spot.",
       "uploadPhotoQuote": "Upload Photo / Get Quote",
       "requestFormalQuote": "Request Formal Quote",
       "quickEnquiryDesc": "Get identification help + quote in minutes",
@@ -259,18 +259,18 @@
       "breadcrumb": "About Us",
       "tag": "About Us",
       "heroTitle": "Terra Hose & Hydraulic Engineering",
-      "heroDesc": "Hydraulic hose assembly specialist based in Johor, Malaysia. We help customers identify, supply, and install the right hydraulic hose and fittings 鈥?fast.",
+      "heroDesc": "Hydraulic hose assembly specialist based in Johor, Malaysia. We help customers identify, supply, and install the right hydraulic hose and fittings — fast.",
       "capabilities": "Our Capabilities",
       "team": "Our Team",
       "getInTouch": "Get In Touch",
       "whatsappUs": "WhatsApp Us",
       "whatWeDontDo": "What We Don't Do",
-      "whatWeDontDoDesc": "We are honest about our capabilities. We do not claim to be an authorized distributor for any brand we are not. If we don't have it, we will tell you 鈥?and try to point you in the right direction.",
+      "whatWeDontDoDesc": "We are honest about our capabilities. We do not claim to be an authorized distributor for any brand we are not. If we don't have it, we will tell you — and try to point you in the right direction.",
       "ourProductsServices": "Our Products & Services",
-      "browseProducts": "Browse Products 鈫?,
-      "viewServices": "View Services 鈫?,
-      "industriesWeServe": "Industries We Serve 鈫?,
-      "productGallery": "Product Gallery 鈫?
+      "browseProducts": "Browse Products →",
+      "viewServices": "View Services →",
+      "industriesWeServe": "Industries We Serve →",
+      "productGallery": "Product Gallery →"
     },
     "contact": {
       "breadcrumb": "Contact",
@@ -283,7 +283,7 @@
       "sendEnquiry": "Send an Enquiry",
       "orMessageUsOn": "Or message us directly on",
       "whatsapp": "WhatsApp",
-      "usuallyFaster": "鈥?usually faster.",
+      "usuallyFaster": "— usually faster.",
       "enquiryReceived": "Enquiry Received!",
       "enquiryReceivedDesc": "We'll get back to you within 1 business day. For faster service, WhatsApp us directly.",
       "chatOnWhatsapp": "Chat on WhatsApp",

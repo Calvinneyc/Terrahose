@@ -23,6 +23,7 @@ export async function generateMetadata({
   }));
 
   return {
+    metadataBase: new URL("https://terrahose.com"),
     title: `${t.hero.title1} ${t.hero.title2}`,
     description: t.hero.desc,
     alternates: {
@@ -36,7 +37,7 @@ export async function generateMetadata({
       alternateLocale: (locale === "zh" ? ["en_MY", "ms_MY"] : locale === "ms" ? ["en_MY", "zh_CN"] : ["zh_CN", "ms_MY"]),
       images: [
         {
-          url: "/og-image.svg",
+          url: "/og-image.jpg",
           width: 1200,
           height: 630,
           alt: "Terra Hose & Hydraulic Engineering — Hydraulic Hose, Fittings & Mobile Service",
@@ -47,7 +48,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: `${t.hero.title1} ${t.hero.title2}`,
       description: t.hero.desc,
-      images: ["/og-image.svg"],
+      images: ["/og-image.jpg"],
     },
   };
 }

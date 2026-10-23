@@ -164,12 +164,12 @@ export function TechnicalGuidePage({
               <div>
                 <h2 className="font-display text-2xl font-bold text-primary mb-5">{g.technicalSpecs}</h2>
                 <div className="overflow-hidden rounded-xl border border-gray-100 shadow-card">
-                  <table className="w-full text-sm">
+                  <table className="w-full text-base">
                     <tbody>
                       {specs.map((s, i) => (
                         <tr key={s.label} className={i % 2 === 0 ? "bg-white" : "bg-[#f8f9fb]"}>
-                          <td className="px-5 py-3.5 font-medium text-steel/80 border-r border-gray-100 w-2/5">{s.label}</td>
-                          <td className="px-5 py-3.5 text-primary font-medium">{s.value}</td>
+                          <td className="px-6 py-4 font-semibold text-steel/80 border-r border-gray-100 w-2/5 align-top">{s.label}</td>
+                          <td className="px-6 py-4 text-primary font-medium leading-relaxed">{s.value}</td>
                         </tr>
                       ))}
                     </tbody>
